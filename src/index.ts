@@ -1,2 +1,3 @@
-export * from './lib/async';
-export * from './lib/number';
+import { SarifBuilder, SarifRunBuilder } from './lib/sarif-builder';
+
+export { SarifBuilder, SarifRunBuilder };
