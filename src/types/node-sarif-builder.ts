@@ -2,18 +2,28 @@ import {
   Address,
   Artifact,
   ArtifactLocation,
+  Attachment,
+  CodeFlow,
   Conversion,
   ExternalProperties,
   ExternalPropertyFileReferences,
+  Fix,
   Graph,
+  GraphTraversal,
   Invocation,
+  Location,
   Log,
   LogicalLocation,
+  Message,
   PropertyBag,
+  ReportingDescriptorReference,
   Result,
+  ResultProvenance,
   Run,
   RunAutomationDetails,
   SpecialLocations,
+  Stack,
+  Suppression,
   ThreadFlowLocation,
   Tool,
   ToolComponent,
@@ -52,7 +62,7 @@ export interface LogOptions {
 /**
  * Describes a single run of an analysis tool, and contains the reported output of that run.
  */
-export interface RunOptions {
+export interface SarifRunOptions {
   /**
    * Addresses associated with this run instance, if any.
    */
@@ -202,6 +212,163 @@ export interface RunOptions {
 
   /**
    * Key/value pairs that provide additional information about the run.
+   */
+  properties?: PropertyBag | undefined;
+}
+
+export interface SarifResultOptions {
+  /**
+   * Identifies the artifact that the analysis tool was instructed to scan. This need not be the same as the artifact
+   * where the result actually occurred.
+   */
+  analysisTarget?: ArtifactLocation | undefined;
+
+  /**
+   * A set of artifacts relevant to the result.
+   */
+  attachments?: Attachment[] | undefined;
+
+  /**
+   * The state of a result relative to a baseline of a previous run.
+   */
+  baselineState?: Result.baselineState | undefined;
+
+  /**
+   * An array of 'codeFlow' objects relevant to the result.
+   */
+  codeFlows?: CodeFlow[] | undefined;
+
+  /**
+   * A stable, unique identifier for the equivalence class of logically identical results to which this result
+   * belongs, in the form of a GUID.
+   */
+  correlationGuid?: string | undefined;
+
+  /**
+   * A set of strings each of which individually defines a stable, unique identity for the result.
+   */
+  fingerprints?: { [key: string]: string } | undefined;
+
+  /**
+   * An array of 'fix' objects, each of which represents a proposed fix to the problem indicated by the result.
+   */
+  fixes?: Fix[] | undefined;
+
+  /**
+   * An array of zero or more unique graph objects associated with the result.
+   */
+  graphs?: Graph[] | undefined;
+
+  /**
+   * An array of one or more unique 'graphTraversal' objects.
+   */
+  graphTraversals?: GraphTraversal[] | undefined;
+
+  /**
+   * A stable, unique identifer for the result in the form of a GUID.
+   */
+  guid?: string | undefined;
+
+  /**
+   * An absolute URI at which the result can be viewed.
+   */
+  hostedViewerUri?: string | undefined;
+
+  /**
+   * A value that categorizes results by evaluation state.
+   */
+  kind?: Result.kind | undefined;
+
+  /**
+   * A value specifying the severity level of the result.
+   */
+  level?: Result.level | undefined;
+
+  /**
+   * The set of locations where the result was detected. Specify only one location unless the problem indicated by
+   * the result can only be corrected by making a change at every specified location.
+   */
+  locations?: Location[] | undefined;
+
+  /**
+   * A message that describes the result. The first sentence of the message only will be displayed when visible space
+   * is limited.
+   */
+  message?: Message;
+
+  /**
+   * A positive integer specifying the number of times this logically unique result was observed in this run.
+   */
+  occurrenceCount?: number | undefined;
+
+  /**
+   * A set of strings that contribute to the stable, unique identity of the result.
+   */
+  partialFingerprints?: { [key: string]: string } | undefined;
+
+  /**
+   * Information about how and when the result was detected.
+   */
+  provenance?: ResultProvenance | undefined;
+
+  /**
+   * A number representing the priority or importance of the result.
+   */
+  rank?: number | undefined;
+
+  /**
+   * A set of locations relevant to this result.
+   */
+  relatedLocations?: Location[] | undefined;
+
+  /**
+   * A reference used to locate the rule descriptor relevant to this result.
+   */
+  rule?: ReportingDescriptorReference | undefined;
+
+  /**
+   * The stable, unique identifier of the rule, if any, to which this notification is relevant. This member can be
+   * used to retrieve rule metadata from the rules dictionary, if it exists.
+   */
+  ruleId?: string | undefined;
+
+  /**
+   * The index within the tool component rules array of the rule object associated with this result.
+   */
+  ruleIndex?: number | undefined;
+
+  /**
+   * An array of 'stack' objects relevant to the result.
+   */
+  stacks?: Stack[] | undefined;
+
+  /**
+   * A set of suppressions relevant to this result.
+   */
+  suppressions?: Suppression[] | undefined;
+
+  /**
+   * An array of references to taxonomy reporting descriptors that are applicable to the result.
+   */
+  taxa?: ReportingDescriptorReference[] | undefined;
+
+  /**
+   * A web request associated with this result.
+   */
+  webRequest?: WebRequest | undefined;
+
+  /**
+   * A web response associated with this result.
+   */
+  webResponse?: WebResponse | undefined;
+
+  /**
+   * The URIs of the work items associated with this result.
+   */
+  workItemUris?: string[] | undefined;
+
+  /**
+   * Key/value pairs that provide additional information about the result.
    */
   properties?: PropertyBag | undefined;
 }

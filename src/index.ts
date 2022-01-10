@@ -1,3 +1,7 @@
-import { SarifBuilder, SarifRunBuilder } from './lib/sarif-builder';
+import {
+  SarifBuilder,
+  SarifResultBuilder,
+  SarifRunBuilder,
+} from './lib/sarif-builder';
 
-export { SarifBuilder, SarifRunBuilder };
+export { SarifBuilder, SarifRunBuilder, SarifResultBuilder };
