@@ -36,6 +36,7 @@ export class SarifRuleBuilder {
         if (options.helpUri) {
             this.setHelpUri(options.helpUri);
         }
+        return this;
     }
 
     setRuleId(ruleId: string) {

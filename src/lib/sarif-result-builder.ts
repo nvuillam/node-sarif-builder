@@ -48,6 +48,7 @@ export class SarifResultBuilder {
             }
             this.setLocationRegion(region);
         }
+        return this;
     }
 
     setLevel(level: Result.level) {

@@ -31,6 +31,7 @@ export class SarifRunBuilder {
         if (options.url) {
             this.setToolDriverUri(options.url);
         }
+        return this;
     }
 
     addRule(sarifRuleBuilder: SarifRuleBuilder) {
