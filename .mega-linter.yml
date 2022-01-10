@@ -12,4 +12,5 @@ FILEIO_REPORTER: false
 PRE_COMMANDS:
   - command: yarn
     cwd: workspace
+JSON_JSONLINT_FILTER_REGEX_EXCLUDE: (\.vscode|tsconfig\.json)
 MARKDOWN_MARKDOWNLINT_FILTER_REGEX_EXCLUDE: (workflows)
