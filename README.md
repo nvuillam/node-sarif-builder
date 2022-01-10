@@ -50,11 +50,17 @@ yarn add node-sarif-builder
 
 ## Use
 
+With node-sarif-builder, you can generate complex SARIF format with simple methods
+
+___
+
 - Start by importing module
 
 ```javascript
 const { SarifBuilder, SarifRunBuilder, SarifResultBuilder, SarifRuleBuilder } = require("node-sarif-builder");
 ```
+
+____
 
 - Create and init **SarifBuilder** and **SarifRunBuilder** objects
 
@@ -68,11 +74,13 @@ const sarifRunBuilder = new SarifRunBuilder().initSimple({
 });
 ```
 
+____
+
 - Add all rules that can be found in your results (recommended but optional)
 
 ```javascript
 // Add SARIF rules
-for (const rule of rules) {
+for (const rule of rules) { // rules from your linter in any format
     const sarifRuleBuiler = new SarifRuleBuilder().initSimple({
         ruleId: rule.id, // ex: "no-any"
         shortDescriptionText: rule.description, // ex: "Do not use any in your code !"
@@ -82,11 +90,13 @@ for (const rule of rules) {
 }
 ```
 
+____
+
 - For each found issue, create a SarifResultBuilder and add it to the SarifRunBuilder object
 
 ```javascript
 // Add results
-for (const issue of issues) {
+for (const issue of issues) { // issues from your linter in any format
     const sarifResultBuilder = new SarifResultBuilder();
     const sarifResultInit = {
          // Transcode to a SARIF level:  can be "warning" or "error" or "note"
@@ -118,6 +128,8 @@ function incrementOrUndefined(val) {
     return val + 1; 
 }
 ```
+
+____
 
 - Add run to sarifBuilder then generate JSON SARIF output file
 
