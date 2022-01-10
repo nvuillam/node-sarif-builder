@@ -15,8 +15,11 @@ import {
   Log,
   LogicalLocation,
   Message,
+  MultiformatMessageString,
   PropertyBag,
+  ReportingConfiguration,
   ReportingDescriptorReference,
+  ReportingDescriptorRelationship,
   Result,
   ResultProvenance,
   Run,
@@ -212,6 +215,84 @@ export interface SarifRunOptions {
 
   /**
    * Key/value pairs that provide additional information about the run.
+   */
+  properties?: PropertyBag | undefined;
+}
+
+export interface RuleBuilderOptions {
+  /**
+   * Default reporting configuration information.
+   */
+  defaultConfiguration?: ReportingConfiguration | undefined;
+
+  /**
+   * An array of unique identifies in the form of a GUID by which this report was known in some previous version of
+   * the analysis tool.
+   */
+  deprecatedGuids?: string[] | undefined;
+
+  /**
+   * An array of stable, opaque identifiers by which this report was known in some previous version of the analysis
+   * tool.
+   */
+  deprecatedIds?: string[] | undefined;
+
+  /**
+   * An array of readable identifiers by which this report was known in some previous version of the analysis tool.
+   */
+  deprecatedNames?: string[] | undefined;
+
+  /**
+   * A description of the report. Should, as far as possible, provide details sufficient to enable resolution of any
+   * problem indicated by the result.
+   */
+  fullDescription?: MultiformatMessageString | undefined;
+
+  /**
+   * A unique identifer for the reporting descriptor in the form of a GUID.
+   */
+  guid?: string | undefined;
+
+  /**
+   * Provides the primary documentation for the report, useful when there is no online documentation.
+   */
+  help?: MultiformatMessageString | undefined;
+
+  /**
+   * A URI where the primary documentation for the report can be found.
+   */
+  helpUri?: string | undefined;
+
+  /**
+   * A stable, opaque identifier for the report.
+   */
+  id?: string;
+
+  /**
+   * A set of name/value pairs with arbitrary names. Each value is a multiformatMessageString object, which holds
+   * message strings in plain text and (optionally) Markdown format. The strings can include placeholders, which can
+   * be used to construct a message in combination with an arbitrary number of additional string arguments.
+   */
+  messageStrings?: { [key: string]: MultiformatMessageString } | undefined;
+
+  /**
+   * A report identifier that is understandable to an end user.
+   */
+  name?: string | undefined;
+
+  /**
+   * An array of objects that describe relationships between this reporting descriptor and others.
+   */
+  relationships?: ReportingDescriptorRelationship[] | undefined;
+
+  /**
+   * A concise description of the report. Should be a single sentence that is understandable when visible space is
+   * limited to a single line of text.
+   */
+  shortDescription?: MultiformatMessageString | undefined;
+
+  /**
+   * Key/value pairs that provide additional information about the report.
    */
   properties?: PropertyBag | undefined;
 }

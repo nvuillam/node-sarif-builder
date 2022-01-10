@@ -1,9 +1,17 @@
 import * as fs from 'fs-extra';
-import { ArtifactLocation, Log, Region, Result, Run } from 'sarif';
+import {
+  ArtifactLocation,
+  Log,
+  Region,
+  ReportingDescriptor,
+  Result,
+  Run,
+} from 'sarif';
 
 import {
   LogOptions,
   SarifResultOptions,
+  SarifRuleOptions,
   SarifRunOptions,
 } from '../types/node-sarif-builder';
 
@@ -57,6 +65,7 @@ export class SarifRunBuilder {
         name:
           process.env.npm_package_name ||
           'SARIF_BUILDER_INVALID: Please send the tool name in SarifRunBuilder tool property, or call setToolName(name)',
+        rules: [],
       },
     },
     results: [],
@@ -67,9 +76,10 @@ export class SarifRunBuilder {
     setOptionValues(options, this.run);
   }
 
-  initSimple(options: { toolName: string }) {
-    if (options.toolName) {
-      this.setToolName(options.toolName);
+  initSimple(options: { name: string; url?: string }) {
+    this.setToolDriverName(options.name);
+    if (options.url) {
+      this.setToolDriverUri(options.url);
     }
   }
 
@@ -77,8 +87,53 @@ export class SarifRunBuilder {
     this.run.results.push(sarifResultBuilder.result);
   }
 
-  setToolName(name: string) {
+  setToolDriverName(name: string) {
     this.run.tool.driver.name = name;
+  }
+  setToolDriverUri(url: string) {
+    this.run.tool.driver.informationUri = url;
+  }
+}
+
+/*
+  Rules describing any error that the linter can return
+*/
+export class SarifRuleBuilder {
+  rule: ReportingDescriptor = {
+    id: 'SARIF_BUILDER_INVALID: Please send the rule identifier in SarifRuleBuilder ruleId property, or call setRuleId(ruleId)',
+  };
+
+  // Initialize SARIF Run builder
+  constructor(options: SarifRuleOptions = {}) {
+    setOptionValues(options, this.rule);
+  }
+
+  initSimple(options: {
+    ruleId: string;
+    shortDescriptionText?: string;
+    fullDescriptionText?: string;
+    helpUri?: string;
+  }) {
+    this.setRuleId(options.ruleId);
+    if (options.shortDescriptionText) {
+      this.setShortDescriptionText(options.shortDescriptionText);
+    }
+    if (options.helpUri) {
+      this.setHelpUri(options.helpUri);
+    }
+  }
+
+  setRuleId(ruleId: string) {
+    this.rule.id = ruleId;
+  }
+
+  setShortDescriptionText(text: string) {
+    this.rule.shortDescription.text = text;
+    this.rule.help;
+  }
+
+  setHelpUri(url: string) {
+    this.rule.helpUri = url;
   }
 }
 

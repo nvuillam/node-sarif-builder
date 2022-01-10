@@ -102,7 +102,7 @@ test('Create SarifResultBuilder and generate file', (t) => {
 
 function createInitSarifRunBuilder() {
   const sarifRunBuilder = new SarifRunBuilder();
-  sarifRunBuilder.initSimple({ toolName: 'MegaLinter' });
+  sarifRunBuilder.initSimple({ name: 'MegaLinter' });
   return sarifRunBuilder;
 }
 
