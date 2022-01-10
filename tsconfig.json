@@ -1,11 +1,13 @@
 {
   "compilerOptions": {
     "module": "commonjs",
-    "target": "ES2019",
+    "target": "es2017",
     "declaration": true,
+    "rootDir": "./src",
     "outDir": "./dist"
   },
-  "include": [
-    "src/**/*"
-  ]
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules/**"],
+  "types": ["node"],
+  "typeRoots": ["node_modules/@types", "src/types"]
 }
