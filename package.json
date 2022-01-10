@@ -28,9 +28,10 @@
     "node": ">=14"
   },
   "files": [
-    "dist",
-    "!**/*.spec.*",
-    "!**/*.json",
+    "dist/lib/sarif-builder.js",
+    "dist/lib/sarif-builder.d.ts",
+    "dist/types/node-sarif-builder.js",
+    "dist/types/node-sarif-builder.d.ts",
     "CHANGELOG.md",
     "LICENSE",
     "README.md"
