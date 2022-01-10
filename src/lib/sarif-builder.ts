@@ -62,18 +62,18 @@ export class SarifBuilder {
         if (location?.physicalLocation?.artifactLocation?.uri &&
           run.artifacts.filter(artifact => artifact?.location?.uri === location.physicalLocation.artifactLocation.uri).length === 0) {
           // Add result to driver artifact only if not existing 
-          run.artifacts.push(location.physicalLocation.artifactLocation);
+          run.artifacts.push({ location: { uri: location.physicalLocation.artifactLocation.uri } });
         }
       }
     }
     // Build artifacts indexes
-    const artifactIndexes = Object.fromEntries(run.artifacts.map((artifact, index) => {
-      return [artifact?.location?.uri, index];
-    }));
+    const artifactIndexes = run.artifacts.map((artifact) => {
+      return artifact?.location?.uri;
+    });
     // Build rules indexes
-    const rulesIndexes = Object.fromEntries((run?.tool?.driver?.rules || []).map((rule, index) => {
-      return [rule.id, index];
-    }));
+    const rulesIndexes = (run?.tool?.driver?.rules || []).map((rule) => {
+      return rule.id;
+    });
 
     // Update index in results with computed values
     run.results = run.results.map(result => {
