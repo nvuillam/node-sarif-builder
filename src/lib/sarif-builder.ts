@@ -1,19 +1,10 @@
 import * as fs from 'fs-extra';
-import {
-  ArtifactLocation,
-  Log,
-  Region,
-  ReportingDescriptor,
-  Result,
-  Run,
-} from 'sarif';
+import { Log, Run } from 'sarif';
 
-import {
-  LogOptions,
-  SarifResultOptions,
-  SarifRuleOptions,
-  SarifRunOptions,
-} from '../types/node-sarif-builder';
+import { LogOptions } from '../types/node-sarif-builder';
+
+import { SarifRunBuilder } from './sarif-run-builder';
+import { setOptionValues } from './utils';
 
 // SARIF Builder
 export class SarifBuilder {
@@ -43,7 +34,15 @@ export class SarifBuilder {
     await fs.writeFile(file, sarifJsonString, 'utf8');
   }
 
+  buildSarifOutput() {
+    // Complete runs
+    this.log.runs = this.log.runs.map(run => this.completeRunFields(run));
+    return this.log;
+  }
+
+  // Build final sarif json, complete when possible
   buildSarifJsonString(options = { indent: false }) {
+    this.buildSarifOutput();
     const sarifJson = options.indent
       ? JSON.stringify(this.log, null, 2)
       : JSON.stringify(this.log);
@@ -54,175 +53,51 @@ export class SarifBuilder {
     }
     return sarifJson;
   }
-}
 
-// SARIF Run builder
-export class SarifRunBuilder {
-  // Default run value
-  run: Run = {
-    tool: {
-      driver: {
-        name:
-          process.env.npm_package_name ||
-          'SARIF_BUILDER_INVALID: Please send the tool name in SarifRunBuilder tool property, or call setToolName(name)',
-        rules: [],
-      },
-    },
-    results: [],
-  };
-
-  // Initialize SARIF Run builder
-  constructor(options: SarifRunOptions = {}) {
-    setOptionValues(options, this.run);
-  }
-
-  initSimple(options: { name: string; url?: string }) {
-    this.setToolDriverName(options.name);
-    if (options.url) {
-      this.setToolDriverUri(options.url);
+  completeRunFields(run: Run): Run {
+    // Collect all missing artifacts from results
+    run.artifacts = run.artifacts || [];
+    for (const result of run.results) {
+      for (const location of result.locations || []) {
+        if (location?.physicalLocation?.artifactLocation?.uri &&
+          run.artifacts.filter(artifact => artifact?.location?.uri === location.physicalLocation.artifactLocation.uri).length === 0) {
+          // Add result to driver artifact only if not existing 
+          run.artifacts.push(location.physicalLocation.artifactLocation);
+        }
+      }
     }
-  }
+    // Build artifacts indexes
+    const artifactIndexes = Object.fromEntries(run.artifacts.map((artifact, index) => {
+      return [artifact?.location?.uri, index];
+    }));
+    // Build rules indexes
+    const rulesIndexes = Object.fromEntries((run?.tool?.driver?.rules || []).map((rule, index) => {
+      return [rule.id, index];
+    }));
 
-  addResult(sarifResultBuilder: SarifResultBuilder) {
-    this.run.results.push(sarifResultBuilder.result);
-  }
+    // Update index in results with computed values
+    run.results = run.results.map(result => {
+      // Set rule index in results
+      if (rulesIndexes[result.ruleId]) {
+        result.ruleIndex = rulesIndexes[result.ruleId]
+      }
+      // Set artifact index in results
+      if (result.locations) {
+        result.locations = result.locations.map(location => {
+          const uri = location?.physicalLocation?.artifactLocation?.uri;
+          if (uri && artifactIndexes[uri] !== undefined && artifactIndexes[uri] !== null) {
+            location.physicalLocation.artifactLocation.index = artifactIndexes[uri];
+          }
+          return location;
+        });
+      }
+      return result;
+    })
 
-  setToolDriverName(name: string) {
-    this.run.tool.driver.name = name;
-  }
-  setToolDriverUri(url: string) {
-    this.run.tool.driver.informationUri = url;
-  }
-}
-
-/*
-  Rules describing any error that the linter can return
-*/
-export class SarifRuleBuilder {
-  rule: ReportingDescriptor = {
-    id: 'SARIF_BUILDER_INVALID: Please send the rule identifier in SarifRuleBuilder ruleId property, or call setRuleId(ruleId)',
-  };
-
-  // Initialize SARIF Run builder
-  constructor(options: SarifRuleOptions = {}) {
-    setOptionValues(options, this.rule);
-  }
-
-  initSimple(options: {
-    ruleId: string;
-    shortDescriptionText?: string;
-    fullDescriptionText?: string;
-    helpUri?: string;
-  }) {
-    this.setRuleId(options.ruleId);
-    if (options.shortDescriptionText) {
-      this.setShortDescriptionText(options.shortDescriptionText);
-    }
-    if (options.helpUri) {
-      this.setHelpUri(options.helpUri);
-    }
-  }
-
-  setRuleId(ruleId: string) {
-    this.rule.id = ruleId;
-  }
-
-  setShortDescriptionText(text: string) {
-    this.rule.shortDescription.text = text;
-    this.rule.help;
-  }
-
-  setHelpUri(url: string) {
-    this.rule.helpUri = url;
+    return run;
   }
 }
 
-export class SarifResultBuilder {
-  // Default result value
-  result: Result = {
-    level: 'error',
-    message: {},
-    ruleId:
-      'SARIF_BUILDER_INVALID: Please send the ruleId name in SarifResultBuilder tool property, or call setRuleId(ruleId)',
-  };
 
-  // Initialize SARIF Result builder
-  constructor(options: SarifResultOptions = {}) {
-    setOptionValues(options, this.result);
-  }
 
-  initSimple(options: {
-    level: Result.level;
-    messageText: string;
-    ruleId: string;
-    fileUri?: string;
-    startLine?: number;
-    startColumn?: number;
-    endLine?: number;
-    endColumn?: number;
-  }) {
-    this.setLevel(options.level);
-    this.setMessageText(options.messageText);
-    this.setRuleId(options.ruleId);
-    if (options.fileUri) {
-      this.setLocationArtifactUri({ uri: options.fileUri });
-    }
-    if (options.startLine !== null) {
-      // Initialize Region with default values with necessary
-      const region: Region = {
-        startLine: options.startLine,
-        startColumn: options.startColumn || 1,
-        endLine: options.endLine || options.startLine,
-        endColumn: options.endColumn || 1,
-      };
-      this.setLocationRegion(region);
-    }
-  }
 
-  setLevel(level: Result.level) {
-    this.result.level = level;
-  }
-
-  setMessageText(message: string) {
-    this.result.message.text = message;
-  }
-
-  setRuleId(ruleId: string) {
-    this.result.ruleId = ruleId;
-  }
-
-  setLocationRegion(region: Region) {
-    this.manageInitPhysicalLocation();
-    this.result.locations[0].physicalLocation.region = region;
-  }
-
-  setLocationArtifactUri(artifactLocation: ArtifactLocation) {
-    this.manageInitPhysicalLocation();
-    this.result.locations[0].physicalLocation.artifactLocation =
-      artifactLocation;
-  }
-
-  private manageInitLocation() {
-    if (this.result?.locations?.length) {
-      return;
-    }
-    this.result.locations = [{}];
-  }
-
-  private manageInitPhysicalLocation() {
-    this.manageInitLocation();
-    if (this.result?.locations[0].physicalLocation) {
-      return;
-    }
-    this.result.locations[0].physicalLocation = {};
-  }
-}
-
-function setOptionValues(options, object: any) {
-  for (const key of Object.keys(object)) {
-    if (options[key] !== undefined) {
-      object[key] = options[key];
-    }
-  }
-  return object;
-}

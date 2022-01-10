@@ -219,7 +219,7 @@ export interface SarifRunOptions {
   properties?: PropertyBag | undefined;
 }
 
-export interface RuleBuilderOptions {
+export interface SarifRuleOptions {
   /**
    * Default reporting configuration information.
    */
@@ -296,6 +296,7 @@ export interface RuleBuilderOptions {
    */
   properties?: PropertyBag | undefined;
 }
+
 
 export interface SarifResultOptions {
   /**

@@ -5,11 +5,10 @@ import test from 'ava';
 import * as fs from 'fs-extra';
 import { Log } from 'sarif';
 
-import {
-  SarifBuilder,
-  SarifResultBuilder,
-  SarifRunBuilder,
-} from './sarif-builder';
+import { SarifBuilder, } from './sarif-builder';
+import { SarifResultBuilder } from './sarif-result-builder';
+import { SarifRuleBuilder } from './sarif-rule-builder';
+import { SarifRunBuilder } from './sarif-run-builder';
 
 test('Create SarifBuilder', (t) => {
   const sarifBuilder = new SarifBuilder();
@@ -52,8 +51,8 @@ test('Create SarifResultBuilder and set message', (t) => {
 test('Create SarifResultBuilder and use initSimple', (t) => {
   const sarifResultBuilder = createInitSarifResultBuilder();
   t.assert(sarifResultBuilder != null, 'SarifResultBuilder has been created');
-  t.is(sarifResultBuilder.result.message.text, 'This is not cool !');
-  t.is(sarifResultBuilder.result.ruleId, 'Wow !');
+  t.is(sarifResultBuilder.result.message.text, 'An assignment operator (=) was used in a conditional test. This is usually a typo, and the comparison operator (==) was intended.');
+  t.is(sarifResultBuilder.result.ruleId, 'AssignmentInConditional');
   t.is(
     sarifResultBuilder.result.locations[0].physicalLocation.artifactLocation
       .uri,
@@ -80,6 +79,7 @@ test('Create SarifResultBuilder and use initSimple', (t) => {
 test('Create SarifResultBuilder and generate file', (t) => {
   const sarifBuilder = new SarifBuilder();
   const sarifRunBuilder = createInitSarifRunBuilder();
+  sarifRunBuilder.addRule(createInitSarifRuleBuilder());
   const sarifResultBuilder = createInitSarifResultBuilder();
   sarifRunBuilder.addResult(sarifResultBuilder);
   sarifBuilder.addRun(sarifRunBuilder);
@@ -95,8 +95,37 @@ test('Create SarifResultBuilder and generate file', (t) => {
     'No runs found in generated SARIF log'
   );
   t.assert(
+    outputSarifObj?.runs[0].tool?.driver?.rules?.length > 0,
+    'No rules found in generated SARIF log'
+  );
+  t.assert(
+    outputSarifObj?.runs[0].artifacts.length > 0,
+    'No artifacts found in generated SARIF log'
+  );
+  t.assert(
     outputSarifObj?.runs[0].results?.length > 0,
     'No results found in generated SARIF log'
+  );
+  t.assert(
+    outputSarifObj?.runs[0].results[0].ruleIndex !== null,
+    'Result rule index should be set'
+  );
+  t.assert(
+    outputSarifObj?.runs[0].results[0]?.locations[0]?.physicalLocation?.artifactLocation?.index !== null,
+    'Result artifact index should be set'
+  );
+});
+
+test('Create SarifResultBuilder with error', (t) => {
+  let error = false;
+  try {
+    createInitSarifWrongResultBuilder();
+  } catch (e) {
+    error = true;
+  }
+  t.assert(
+    error === true,
+    'Error should have been triggered'
   );
 });
 
@@ -110,10 +139,33 @@ function createInitSarifResultBuilder() {
   const sarifResultBuilder = new SarifResultBuilder();
   sarifResultBuilder.initSimple({
     level: 'warning',
-    messageText: 'This is not cool !',
-    ruleId: 'Wow !',
+    messageText: 'An assignment operator (=) was used in a conditional test. This is usually a typo, and the comparison operator (==) was intended.',
+    ruleId: 'AssignmentInConditional',
     fileUri: 'src/urf/wesh.js',
     startLine: 8,
   });
   return sarifResultBuilder;
+}
+
+function createInitSarifWrongResultBuilder() {
+  const sarifResultBuilder = new SarifResultBuilder();
+  sarifResultBuilder.initSimple({
+    level: 'warning',
+    messageText: 'some code used = , you may should have used ==',
+    ruleId: 'AssignmentInConditional',
+    fileUri: 'src/urf/wesh.js',
+    startLine: 0,
+  });
+  return sarifResultBuilder;
+}
+
+function createInitSarifRuleBuilder() {
+  const sarifRuleBuilder = new SarifRuleBuilder();
+  sarifRuleBuilder.initSimple({
+    ruleId: 'AssignmentInConditional',
+    shortDescriptionText: 'This is wrong, that should not happenAn assignment operator (=) was used in a conditional test. This is usually a typo, and the comparison operator (==) was intended.',
+    fullDescriptionText: 'Change something in your code and this rule will not be triggered !',
+    helpUri: 'https://codenarc.org/codenarc-rules-basic.html#AssignmentInConditional'
+  });
+  return sarifRuleBuilder;
 }
