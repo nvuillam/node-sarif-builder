@@ -37,7 +37,7 @@
     "prepare-release": "run-s reset-hard test cov:check doc:html doc:publish"
   },
   "engines": {
-    "node": ">=10"
+    "node": ">=14"
   },
   "dependencies": {
     "@types/fs-extra": "^9.0.13",
