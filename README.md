@@ -119,14 +119,6 @@ for (const issue of issues) { // issues from your linter in any format
     // Add result to sarifRunBuilder
     sarifRunBuilder.addResult(sarifResultBuilder);
 }
-
-function incrementOrUndefined(val) {
-    if (val === null) {
-        return undefined;
-    }
-    // Increment only if your linter starts to count at zero :)
-    return val + 1; 
-}
 ```
 
 ____
