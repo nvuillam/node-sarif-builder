@@ -80,8 +80,9 @@ test('Create SarifResultBuilder and generate file', (t) => {
   const sarifBuilder = new SarifBuilder();
   const sarifRunBuilder = createInitSarifRunBuilder();
   sarifRunBuilder.addRule(createInitSarifRuleBuilder());
-  const sarifResultBuilder = createInitSarifResultBuilder();
-  sarifRunBuilder.addResult(sarifResultBuilder);
+  sarifRunBuilder.addRule(createInitSarifRuleBuilder2());
+  sarifRunBuilder.addResult(createInitSarifResultBuilder());
+  sarifRunBuilder.addResult(createInitSarifResultBuilder2());
   sarifBuilder.addRun(sarifRunBuilder);
   const outputFile = path.join(
     os.tmpdir(),
@@ -95,7 +96,7 @@ test('Create SarifResultBuilder and generate file', (t) => {
     'No runs found in generated SARIF log'
   );
   t.assert(
-    outputSarifObj?.runs[0].tool?.driver?.rules?.length > 0,
+    outputSarifObj?.runs[0].tool?.driver?.rules?.length > 1,
     'No rules found in generated SARIF log'
   );
   t.assert(
@@ -103,7 +104,7 @@ test('Create SarifResultBuilder and generate file', (t) => {
     'No artifacts found in generated SARIF log'
   );
   t.assert(
-    outputSarifObj?.runs[0].results?.length > 0,
+    outputSarifObj?.runs[0].results?.length > 1,
     'No results found in generated SARIF log'
   );
   t.assert(
@@ -147,6 +148,18 @@ function createInitSarifResultBuilder() {
   return sarifResultBuilder;
 }
 
+function createInitSarifResultBuilder2() {
+  const sarifResultBuilder = new SarifResultBuilder();
+  sarifResultBuilder.initSimple({
+    level: 'warning',
+    messageText: 'Nooo no any !',
+    ruleId: 'NoAny',
+    fileUri: 'src/urf/wesh.js',
+    startLine: 8,
+  });
+  return sarifResultBuilder;
+}
+
 function createInitSarifWrongResultBuilder() {
   const sarifResultBuilder = new SarifResultBuilder();
   sarifResultBuilder.initSimple({
@@ -166,6 +179,16 @@ function createInitSarifRuleBuilder() {
     shortDescriptionText: 'This is wrong, that should not happenAn assignment operator (=) was used in a conditional test. This is usually a typo, and the comparison operator (==) was intended.',
     fullDescriptionText: 'Change something in your code and this rule will not be triggered !',
     helpUri: 'https://codenarc.org/codenarc-rules-basic.html#AssignmentInConditional'
+  });
+  return sarifRuleBuilder;
+}
+
+function createInitSarifRuleBuilder2() {
+  const sarifRuleBuilder = new SarifRuleBuilder();
+  sarifRuleBuilder.initSimple({
+    ruleId: 'NoAny',
+    shortDescriptionText: 'Nooo no no, any are not good !',
+    helpUri: 'https://codenarc.org/codenarc-rules-basic.html#NoAny'
   });
   return sarifRuleBuilder;
 }
