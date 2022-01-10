@@ -1,6 +1,6 @@
 {
   "name": "node-sarif-builder",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "Module to help building SARIF log files",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -44,10 +44,10 @@
     "fs-extra": "^10.0.0"
   },
   "devDependencies": {
-    "@types/fs-extra": "^9.0.13",
-    "@types/node": "^17.0.8",
     "@ava/typescript": "^3.0.1",
     "@istanbuljs/nyc-config-typescript": "^1.0.2",
+    "@types/fs-extra": "^9.0.13",
+    "@types/node": "^17.0.8",
     "@typescript-eslint/eslint-plugin": "^4.0.1",
     "@typescript-eslint/parser": "^4.0.1",
     "ava": "^4.0.1",
