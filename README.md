@@ -99,12 +99,12 @@ for (const issue of issues) {
     };
     // When possible, provide location of the issue in the source code
     if (issue.range) {
-        sarifResultInit.startLine = incrementOrUndefined(issue.range.start.line); // any integer >= 1 (optional)
-        sarifResultInit.startColumn = incrementOrUndefined(issue.range.start.character); // any integer >= 1 (optional)
-        sarifResultInit.endLine = incrementOrUndefined(issue.range.end.line); // any integer >= 1 (optional)
-        sarifResultInit.endColumn = incrementOrUndefined(issue.range.end.character); // any integer >= 1 (optional)
+        sarifResultInit.startLine = issue.range.start.line; // any integer >= 1 (optional)
+        sarifResultInit.startColumn = issue.range.start.character; // any integer >= 1 (optional)
+        sarifResultInit.endLine = issue.range.end.line; // any integer >= 1 (optional)
+        sarifResultInit.endColumn = issue.range.end.character; // any integer >= 1 (optional)
     }
-    // Init saarifResultBuilder
+    // Init sarifResultBuilder
     sarifResultBuilder.initSimple(sarifResultInit); 
     // Add result to sarifRunBuilder
     sarifRunBuilder.addResult(sarifResultBuilder);
@@ -165,10 +165,10 @@ function buildSarifResult(lintResult) {
                     : path.relative(process.cwd(), fileNm)
             };
             if (err.range) {
-                sarifResultInit.startLine = incrementOrUndefined(err.range.start.line);
-                sarifResultInit.startColumn = incrementOrUndefined(err.range.start.character);
-                sarifResultInit.endLine = incrementOrUndefined(err.range.end.line);
-                sarifResultInit.endColumn = incrementOrUndefined(err.range.end.character);
+                sarifResultInit.startLine = fixLine(err.range.start.line);
+                sarifResultInit.startColumn = fixCol(err.range.start.character);
+                sarifResultInit.endLine = fixLine(err.range.end.line);
+                sarifResultInit.endColumn = fixCol(err.range.end.character);
             }
             sarifResultBuilder.initSimple(sarifResultInit);
             sarifRunBuilder.addResult(sarifResultBuilder);
@@ -178,10 +178,17 @@ function buildSarifResult(lintResult) {
     return sarifBuilder.buildSarifJsonString({ indent: false });
 }
 
-function incrementOrUndefined(val) {
+function fixLine(val) {
     if (val === null) {
         return undefined;
     }
-    return val + 1;
+    return val === 0 ? 1 : val;
+}
+
+function fixCol(val) {
+    if (val === null) {
+        return undefined;
+    }
+    return val === 0 ? 1 : val + 1;
 }
 ```
