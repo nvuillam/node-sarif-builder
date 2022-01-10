@@ -69,7 +69,7 @@ ____
 const sarifBuilder = new SarifBuilder();
 // SARIF Run builder
 const sarifRunBuilder = new SarifRunBuilder().initSimple({
-    name: "npm-groovy-lint", // Name of your analyzer tool
+    name: "npm-groovy-lint",                           // Name of your analyzer tool
     url: "https://nvuillam.github.io/npm-groovy-lint/" // Url of your analyzer tool
 });
 ```
@@ -80,11 +80,11 @@ ____
 
 ```javascript
 // Add SARIF rules
-for (const rule of rules) { // rules from your linter in any format
+for (const rule of rules) {                           // rules from your linter in any format
     const sarifRuleBuiler = new SarifRuleBuilder().initSimple({
-        ruleId: rule.id, // ex: "no-any"
-        shortDescriptionText: rule.description, // ex: "Do not use any in your code !"
-        helpUri: rule.docUrl // ex: "http://my.linter.com/rules/no-any"
+        ruleId: rule.id,                              // ex: "no-any"
+        shortDescriptionText: rule.description,       // ex: "Do not use any in your code !"
+        helpUri: rule.docUrl                          // ex: "http://my.linter.com/rules/no-any"
     });
     sarifRunBuilder.addRule(sarifRuleBuiler);
 }
@@ -103,16 +103,16 @@ for (const issue of issues) { // issues from your linter in any format
         level: issue.severity === "info" ? "note" : issue.severity,
         messageText: err.msg, // Ex: "any is forbidden !"
         ruleId: err.rule, // Ex: "no-any"
-        fileUri: process.env.SARIF_URI_ABSOLUTE // Ex: src/myfile.ts
+        fileUri: process.env.SARIF_URI_ABSOLUTE             // Ex: src/myfile.ts
             ? "file:///" + fileNm.replace(/\\/g, "/")
             : path.relative(process.cwd(), fileNm)
     };
     // When possible, provide location of the issue in the source code
     if (issue.range) {
-        sarifResultInit.startLine = issue.range.start.line; // any integer >= 1 (optional)
+        sarifResultInit.startLine = issue.range.start.line;        // any integer >= 1 (optional)
         sarifResultInit.startColumn = issue.range.start.character; // any integer >= 1 (optional)
-        sarifResultInit.endLine = issue.range.end.line; // any integer >= 1 (optional)
-        sarifResultInit.endColumn = issue.range.end.character; // any integer >= 1 (optional)
+        sarifResultInit.endLine = issue.range.end.line;            // any integer >= 1 (optional)
+        sarifResultInit.endColumn = issue.range.end.character;     // any integer >= 1 (optional)
     }
     // Init sarifResultBuilder
     sarifResultBuilder.initSimple(sarifResultInit); 
@@ -129,7 +129,7 @@ ____
     sarifBuilder.addRun(sarifRunBuilder);
     const sarifJsonString = sarifBuilder.buildSarifJsonString({ indent: false }); // indent:true if you like
     fs.writeFileSync(outputSarifFile,sarifJsonString);
-    // const sarifObj = sarifBuilder.buildSarifOutput(); // You could also just get the Sarif log as an object and not a string
+    // const sarifObj = sarifBuilder.buildSarifOutput();                          // You could also just get the Sarif log as an object and not a string
 ```
 
 ## Full example
