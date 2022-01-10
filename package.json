@@ -4,6 +4,7 @@
   "description": "Module to help building SARIF log files",
   "main": "dist/lib/index.js",
   "typings": "dist/lib/index.d.ts",
+  "module": "dit/lib/index.js",
   "repository": "https://github.com/nvuillam/node-sarif-builder",
   "license": "MIT",
   "keywords": [],
@@ -29,10 +30,9 @@
     "node": ">=14"
   },
   "files": [
-    "dist/lib/sarif-builder.js",
-    "dist/lib/sarif-builder.d.ts",
-    "dist/types/node-sarif-builder.js",
-    "dist/types/node-sarif-builder.d.ts",
+    "dist",
+    "!**/*.spec.*",
+    "!**/*.json",
     "CHANGELOG.md",
     "LICENSE",
     "README.md"
