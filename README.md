@@ -4,14 +4,12 @@
 
 Until today, every SAST tool (not exhaustive list available at <https://analysis-tools.dev/>) is using its own custom output format.
 
-In order to **unify SAST tools output** to integrate them into various aggregators ,more and more tools and services are implementing [**SARIF format**](https://sarifweb.azurewebsites.net/) ([example](https://github.com/microsoft/sarif-tutorials/blob/main/samples/1-Introduction/simple-example.sarif)), [OASIS Specification](https://docs.oasis-open.org/sarif/sarif/v2.1.0/csprd01/sarif-v2.1.0-csprd01.html)
+In order to **unify SAST tools output format**, more and more tools and services are implementing [**SARIF format**](https://sarifweb.azurewebsites.net/) ([example](https://github.com/microsoft/sarif-tutorials/blob/main/samples/1-Introduction/simple-example.sarif))
 
 SARIF logs can be:
 - **Uploaded to DevOps tools**, like [Github](https://docs.github.com/en/code-security/code-scanning/integrating-with-code-scanning/sarif-support-for-code-scanning), [Azure DevOps](https://github.com/microsoft/sarif-azuredevops-extension) to show issues directly in their web UI
 - **Visualized in IDEs**, like [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=MS-SarifVSCode.sarif-viewer), [Visual Studio](https://marketplace.visualstudio.com/items?itemName=WDGIS.MicrosoftSarifViewer)
 - **Aggregated by multi-language linters**, like [MegaLinter](https://megalinter.github.io/latest/)
-
-If you are a maintainer of any javascript/typescript based SAST tool, but also IaC tool, or any type of tool that can return a list of errors with a level of severity, you can use this library to add SARIF as additional output format, so your tool will be natively compliant with any of SARIF-compliant tools !
 
 Example of linters that can output logs in SARIF format:
 
@@ -33,6 +31,8 @@ Example of linters that can output logs in SARIF format:
 - terrascan (terrasform)
 - trivy (security)
 - and many more...
+
+If you are a **maintainer** of any **javascript/typescript based** SAST tool, but also IaC tool, or **any type of tool that can return a list of errors with a level of severity**, you can either read the whole [OASIS Specification](https://docs.oasis-open.org/sarif/sarif/v2.1.0/csprd01/sarif-v2.1.0-csprd01.html), or **simply use this library** to add SARIF as additional output format, so your tool will be natively compliant with any of SARIF-compliant tools !
 
 ## Installation
 
