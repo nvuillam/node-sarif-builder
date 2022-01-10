@@ -35,8 +35,10 @@ export class SarifBuilder {
     await fs.writeFile(file, sarifJsonString, 'utf8');
   }
 
-  buildSarifJsonString() {
-    const sarifJson = JSON.stringify(this.log, null, 2);
+  buildSarifJsonString(indent = false) {
+    const sarifJson = indent
+      ? JSON.stringify(this.log, null, 2)
+      : JSON.stringify(this.log);
     if (sarifJson.includes('SARIF_BUILDER_INVALID')) {
       throw new Error(
         'Your SARIF log is invalid, please solve SARIF_BUILDER_INVALID messages'
