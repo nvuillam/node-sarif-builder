@@ -101,9 +101,9 @@ for (const issue of issues) { // issues from your linter in any format
     const sarifResultInit = {
          // Transcode to a SARIF level:  can be "warning" or "error" or "note"
         level: issue.severity === "info" ? "note" : issue.severity,
-        messageText: err.msg, // Ex: "any is forbidden !"
-        ruleId: err.rule, // Ex: "no-any"
-        fileUri: process.env.SARIF_URI_ABSOLUTE             // Ex: src/myfile.ts
+        messageText: err.msg,                                     // Ex: "any is forbidden !"
+        ruleId: err.rule,                                         // Ex: "no-any"
+        fileUri: process.env.SARIF_URI_ABSOLUTE                   // Ex: src/myfile.ts
             ? "file:///" + fileNm.replace(/\\/g, "/")
             : path.relative(process.cwd(), fileNm)
     };
