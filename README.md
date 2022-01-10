@@ -1,5 +1,16 @@
 # node-sarif-builder
 
+[![Version](https://img.shields.io/npm/v/node-sarif-builder.svg)](https://npmjs.org/package/node-sarif-builder)
+[![Downloads/week](https://img.shields.io/npm/dw/node-sarif-builder.svg)](https://npmjs.org/package/node-sarif-builder)
+[![Downloads/total](https://img.shields.io/npm/dt/node-sarif-builder.svg)](https://npmjs.org/package/node-sarif-builder)
+[![Test](https://github.com/nvuillam/node-sarif-builder/workflows/Test/badge.svg?branch=main)](https://github.com/nvuillam/node-sarif-builder/actions?query=workflow%3ATest+branch%3Amain)
+<!-- [![codecov](https://codecov.io/gh/nvuillam/node-sarif-builder/branch/master/graph/badge.svg)](https://codecov.io/gh/nvuillam/node-sarif-builder) -->
+[![Mega-Linter](https://github.com/nvuillam/node-sarif-builder/workflows/MegaLinter/badge.svg?branch=main)](https://megalinter.github.io/)
+[![GitHub contributors](https://img.shields.io/github/contributors/nvuillam/node-sarif-builder.svg)](https://github.com/nvuillam/node-sarif-builder/graphs/contributors/)
+[![GitHub stars](https://img.shields.io/github/stars/nvuillam/node-sarif-builder?label=Star&maxAge=2592000)](https://GitHub.com/nvuillam/node-sarif-builder/stargazers/)
+[![License](https://img.shields.io/npm/l/node-sarif-builder.svg)](https://github.com/nvuillam/node-sarif-builder/blob/master/package.json)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
 ## Introduction
 
 Until today, every SAST tool (not exhaustive list available at <https://analysis-tools.dev/>) is using its own custom output format.
