@@ -7,7 +7,15 @@
   "module": "dit/index.js",
   "repository": "https://github.com/nvuillam/node-sarif-builder",
   "license": "MIT",
-  "keywords": [],
+  "keywords": [
+    "sarif",
+    "builder",
+    "node",
+    "simple",
+    "linter",
+    "output",
+    "format"
+  ],
   "scripts": {
     "fix": "run-s fix:*",
     "fix:prettier": "prettier \"src/**/*.ts\" --write",
