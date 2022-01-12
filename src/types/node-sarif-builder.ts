@@ -32,8 +32,8 @@ import {
   ToolComponent,
   VersionControlDetails,
   WebRequest,
-  WebResponse,
-} from 'sarif';
+  WebResponse
+} from 'sarif'
 
 export interface LogOptions {
   /**
@@ -296,7 +296,6 @@ export interface SarifRuleOptions {
    */
   properties?: PropertyBag | undefined;
 }
-
 
 export interface SarifResultOptions {
   /**

@@ -43,7 +43,10 @@ Example of linters that can output logs in SARIF format:
 - trivy (security)
 - and many more...
 
-If you are a **maintainer** of any **javascript/typescript based** SAST tool, but also IaC tool, or **any type of tool that can return a list of errors with a level of severity**, you can either read the whole [OASIS Specification](https://docs.oasis-open.org/sarif/sarif/v2.1.0/csprd01/sarif-v2.1.0-csprd01.html), or **simply use this library** to add SARIF as additional output format, so your tool will be natively compliant with any of SARIF-compliant tools !
+If you are a **maintainer** of any **javascript/typescript based** SAST tool, but also IaC tool, or **any type of tool that can return a list of errors with a level of severity**, you can either:
+
+- read the whole [OASIS Specification](https://docs.oasis-open.org/sarif/sarif/v2.1.0/csprd01/sarif-v2.1.0-csprd01.html) and implement it
+- **simply use this library** to add SARIF as additional output format, so your tool will be natively compliant with any of SARIF-compliant tools !
 
 ## Installation
 
@@ -71,7 +74,7 @@ ___
 const { SarifBuilder, SarifRunBuilder, SarifResultBuilder, SarifRuleBuilder } = require("node-sarif-builder");
 ```
 
-____
+___
 
 - Create and init **SarifBuilder** and **SarifRunBuilder** objects
 
@@ -80,12 +83,13 @@ ____
 const sarifBuilder = new SarifBuilder();
 // SARIF Run builder
 const sarifRunBuilder = new SarifRunBuilder().initSimple({
-    name: "npm-groovy-lint",                           // Name of your analyzer tool
-    url: "https://nvuillam.github.io/npm-groovy-lint/" // Url of your analyzer tool
+    toolDriverName: "npm-groovy-lint",                           // Name of your analyzer tool
+    toolDriverVersion: "9.0.5",                                  // Version of your analyzer tool
+    url: "https://nvuillam.github.io/npm-groovy-lint/"           // Url of your analyzer tool
 });
 ```
 
-____
+___
 
 - Add all rules that can be found in your results (recommended but optional)
 
@@ -101,7 +105,7 @@ for (const rule of rules) {                           // rules from your linter 
 }
 ```
 
-____
+___
 
 - For each found issue, create a SarifResultBuilder and add it to the SarifRunBuilder object
 
@@ -132,7 +136,7 @@ for (const issue of issues) { // issues from your linter in any format
 }
 ```
 
-____
+___
 
 - Add run to sarifBuilder then generate JSON SARIF output file
 
@@ -145,7 +149,7 @@ ____
 
 ## Full example
 
-- Working in [npm-groovy-lint]()
+- Working in [npm-groovy-lint](https://github.com/nvuillam/npm-groovy-lint)
 
 ```javascript
 function buildSarifResult(lintResult) {
@@ -153,7 +157,8 @@ function buildSarifResult(lintResult) {
     const sarifBuilder = new SarifBuilder();
     // SARIF Run builder
     const sarifRunBuilder = new SarifRunBuilder().initSimple({
-        name: "npm-groovy-lint",
+        toolDriverName: "npm-groovy-lint",
+        toolDriverVersion: "9.0.5", 
         url: "https://nvuillam.github.io/npm-groovy-lint/"
     });
     // SARIF rules
@@ -207,3 +212,7 @@ function fixCol(val) {
     return val === 0 ? 1 : val + 1;
 }
 ```
+
+## Test
+
+You can confirm that your generated SARIF logs are valid on <https://sarifweb.azurewebsites.net/Validation>
