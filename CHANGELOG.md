@@ -7,11 +7,11 @@
 ## [2.0.0] 2022-01-12
 
 - Mandatory properties `toolDriverName` and `toolDriverVersion` for SarifRunBuilder
-- Change default schema version to https://www.schemastore.org/schemas/json/sarif-2.1.0-rtm.5.json
+- Change default schema version to <https://www.schemastore.org/schemas/json/sarif-2.1.0-rtm.5.json>
 - When possible, automatically populate SARIF properties:
-    - `artifact.sourceLanguage`
-    - `result.locations.location.physicalLocation.artifactLocation.index`
-    - `result.ruleIndex`
+  - `artifact.sourceLanguage`
+  - `result.locations.location.physicalLocation.artifactLocation.index`
+  - `result.ruleIndex`
 - Fix bug when initSimple is called without region properties
 
 ## [1.0.0] 2022-01-11
