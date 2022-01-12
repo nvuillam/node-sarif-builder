@@ -13,38 +13,38 @@ import { setOptionValues } from './utils'
 export class SarifBuilder {
   // Default run value
   log: Log = {
-    $schema: 'https://www.schemastore.org/schemas/json/sarif-2.1.0-rtm.5.json',
+    $schema: 'http://json.schemastore.org/sarif-2.1.0-rtm.5.json',
     version: '2.1.0',
     runs: []
   };
 
   // Initialize SARIF Log builder
-  constructor (options: LogOptions = {}) {
+  constructor(options: LogOptions = {}) {
     setOptionValues(options, this.log)
   }
 
-  addRun (sarifRunBuilder: SarifRunBuilder) {
+  addRun(sarifRunBuilder: SarifRunBuilder) {
     this.log.runs.push(sarifRunBuilder.run)
   }
 
-  generateSarifFileSync (file: string) {
+  generateSarifFileSync(file: string) {
     const sarifJsonString = this.buildSarifJsonString()
     fs.writeFileSync(file, sarifJsonString, 'utf8')
   }
 
-  async generateSarifFile (file: string) {
+  async generateSarifFile(file: string) {
     const sarifJsonString = this.buildSarifJsonString()
     await fs.writeFile(file, sarifJsonString, 'utf8')
   }
 
-  buildSarifOutput () {
+  buildSarifOutput() {
     // Complete runs
     this.log.runs = this.log.runs.map(run => this.completeRunFields(run))
     return this.log
   }
 
   // Build final sarif json, complete when possible
-  buildSarifJsonString (options = { indent: false }) {
+  buildSarifJsonString(options = { indent: false }) {
     this.buildSarifOutput()
     const sarifJson = options.indent
       ? JSON.stringify(this.log, null, 2)
@@ -57,7 +57,7 @@ export class SarifBuilder {
     return sarifJson
   }
 
-  completeRunFields (run: Run): Run {
+  completeRunFields(run: Run): Run {
     // Collect all missing artifacts from results
     run.artifacts = run.artifacts || []
     for (const result of run.results) {
