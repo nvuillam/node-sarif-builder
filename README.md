@@ -43,7 +43,10 @@ Example of linters that can output logs in SARIF format:
 - trivy (security)
 - and many more...
 
-If you are a **maintainer** of any **javascript/typescript based** SAST tool, but also IaC tool, or **any type of tool that can return a list of errors with a level of severity**, you can either read the whole [OASIS Specification](https://docs.oasis-open.org/sarif/sarif/v2.1.0/csprd01/sarif-v2.1.0-csprd01.html), or **simply use this library** to add SARIF as additional output format, so your tool will be natively compliant with any of SARIF-compliant tools !
+If you are a **maintainer** of any **javascript/typescript based** SAST tool, but also IaC tool, or **any type of tool that can return a list of errors with a level of severity**, you can either:
+
+- read the whole [OASIS Specification](https://docs.oasis-open.org/sarif/sarif/v2.1.0/csprd01/sarif-v2.1.0-csprd01.html) and implement it
+- **simply use this library** to add SARIF as additional output format, so your tool will be natively compliant with any of SARIF-compliant tools !
 
 ## Installation
 
@@ -71,7 +74,7 @@ ___
 const { SarifBuilder, SarifRunBuilder, SarifResultBuilder, SarifRuleBuilder } = require("node-sarif-builder");
 ```
 
-____
+___
 
 - Create and init **SarifBuilder** and **SarifRunBuilder** objects
 
@@ -86,7 +89,7 @@ const sarifRunBuilder = new SarifRunBuilder().initSimple({
 });
 ```
 
-____
+___
 
 - Add all rules that can be found in your results (recommended but optional)
 
@@ -102,7 +105,7 @@ for (const rule of rules) {                           // rules from your linter 
 }
 ```
 
-____
+___
 
 - For each found issue, create a SarifResultBuilder and add it to the SarifRunBuilder object
 
@@ -133,7 +136,7 @@ for (const issue of issues) { // issues from your linter in any format
 }
 ```
 
-____
+___
 
 - Add run to sarifBuilder then generate JSON SARIF output file
 
@@ -146,7 +149,7 @@ ____
 
 ## Full example
 
-- Working in [npm-groovy-lint]()
+- Working in [npm-groovy-lint](https://github.com/nvuillam/npm-groovy-lint)
 
 ```javascript
 function buildSarifResult(lintResult) {
