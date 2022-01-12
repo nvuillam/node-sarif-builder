@@ -34,7 +34,7 @@ export class SarifResultBuilder {
         if (options.fileUri) {
             this.setLocationArtifactUri({ uri: options.fileUri });
         }
-        if (options.startLine !== null) {
+        if (options.startLine !== null && options.startLine !== undefined) {
             // Initialize Region with default values with necessary
             const region: Region = {
                 startLine: options.startLine,

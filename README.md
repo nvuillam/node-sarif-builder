@@ -80,8 +80,9 @@ ____
 const sarifBuilder = new SarifBuilder();
 // SARIF Run builder
 const sarifRunBuilder = new SarifRunBuilder().initSimple({
-    name: "npm-groovy-lint",                           // Name of your analyzer tool
-    url: "https://nvuillam.github.io/npm-groovy-lint/" // Url of your analyzer tool
+    toolDriverName: "npm-groovy-lint",                           // Name of your analyzer tool
+    toolDriverVersion: "9.0.5",                                  // Version of your analyzer tool
+    url: "https://nvuillam.github.io/npm-groovy-lint/"           // Url of your analyzer tool
 });
 ```
 
@@ -153,7 +154,8 @@ function buildSarifResult(lintResult) {
     const sarifBuilder = new SarifBuilder();
     // SARIF Run builder
     const sarifRunBuilder = new SarifRunBuilder().initSimple({
-        name: "npm-groovy-lint",
+        toolDriverName: "npm-groovy-lint",
+        toolDriverVersion: "9.0.5", 
         url: "https://nvuillam.github.io/npm-groovy-lint/"
     });
     // SARIF rules
@@ -207,3 +209,7 @@ function fixCol(val) {
     return val === 0 ? 1 : val + 1;
 }
 ```
+
+## Test
+
+You can confirm that your generated SARIF logs are valid on <https://sarifweb.azurewebsites.net/Validation>

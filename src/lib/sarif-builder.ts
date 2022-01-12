@@ -1,8 +1,11 @@
+import * as path from 'path';
+
 import * as fs from 'fs-extra';
 import { Log, Run } from 'sarif';
 
 import { LogOptions } from '../types/node-sarif-builder';
 
+import { EXTENSIONS_LANGUAGES } from './languages';
 import { SarifRunBuilder } from './sarif-run-builder';
 import { setOptionValues } from './utils';
 
@@ -10,7 +13,7 @@ import { setOptionValues } from './utils';
 export class SarifBuilder {
   // Default run value
   log: Log = {
-    $schema: 'http://json.schemastore.org/sarif-2.1.0-rtm.4',
+    $schema: 'https://docs.oasis-open.org/sarif/sarif/v2.1.0/cos02/schemas/sarif-schema-2.1.0',
     version: '2.1.0',
     runs: [],
   };
@@ -62,7 +65,9 @@ export class SarifBuilder {
         if (location?.physicalLocation?.artifactLocation?.uri &&
           run.artifacts.filter(artifact => artifact?.location?.uri === location.physicalLocation.artifactLocation.uri).length === 0) {
           // Add result to driver artifact only if not existing 
-          run.artifacts.push({ location: { uri: location.physicalLocation.artifactLocation.uri } });
+          const ext = path.extname(location.physicalLocation.artifactLocation.uri).replace(".", "");
+          const language = EXTENSIONS_LANGUAGES[ext] || "unknown";
+          run.artifacts.push({ sourceLanguage: language, location: { uri: location.physicalLocation.artifactLocation.uri } });
         }
       }
     }
@@ -70,6 +75,8 @@ export class SarifBuilder {
     const artifactIndexes = run.artifacts.map((artifact) => {
       return artifact?.location?.uri;
     });
+
+
     // Build rules indexes
     const rulesIndexes = (run?.tool?.driver?.rules || []).map((rule) => {
       return rule.id;
@@ -78,15 +85,15 @@ export class SarifBuilder {
     // Update index in results with computed values
     run.results = run.results.map(result => {
       // Set rule index in results
-      if (rulesIndexes[result.ruleId]) {
-        result.ruleIndex = rulesIndexes[result.ruleId]
+      if (rulesIndexes.indexOf(result.ruleId) > -1) {
+        result.ruleIndex = rulesIndexes.indexOf(result.ruleId)
       }
       // Set artifact index in results
       if (result.locations) {
         result.locations = result.locations.map(location => {
           const uri = location?.physicalLocation?.artifactLocation?.uri;
-          if (uri && artifactIndexes[uri] !== undefined && artifactIndexes[uri] !== null) {
-            location.physicalLocation.artifactLocation.index = artifactIndexes[uri];
+          if (uri && artifactIndexes.indexOf(uri) > -1) {
+            location.physicalLocation.artifactLocation.index = artifactIndexes.indexOf(uri);
           }
           return location;
         });

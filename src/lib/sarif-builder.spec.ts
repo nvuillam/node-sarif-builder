@@ -132,7 +132,7 @@ test('Create SarifResultBuilder with error', (t) => {
 
 function createInitSarifRunBuilder() {
   const sarifRunBuilder = new SarifRunBuilder();
-  sarifRunBuilder.initSimple({ name: 'MegaLinter' });
+  sarifRunBuilder.initSimple({ toolDriverName: 'MegaLinter', toolDriverVersion: "5.5.0" });
   return sarifRunBuilder;
 }
 

@@ -26,8 +26,9 @@ export class SarifRunBuilder {
         setOptionValues(options, this.run);
     }
 
-    initSimple(options: { name: string; url?: string }) {
-        this.setToolDriverName(options.name);
+    initSimple(options: { toolDriverName: string; toolDriverVersion: string, url?: string }) {
+        this.setToolDriverName(options.toolDriverName);
+        this.setToolDriverVersion(options.toolDriverVersion);
         if (options.url) {
             this.setToolDriverUri(options.url);
         }
@@ -44,6 +45,10 @@ export class SarifRunBuilder {
 
     setToolDriverName(name: string) {
         this.run.tool.driver.name = name;
+    }
+
+    setToolDriverVersion(version: string) {
+        this.run.tool.driver.version = version;
     }
 
     setToolDriverUri(url: string) {
