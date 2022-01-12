@@ -4,6 +4,10 @@
 
 - Add your updates here :)
 
+## [2.0.1] 2022-01-12
+
+- Update JSON schema to <http://json.schemastore.org/sarif-2.1.0-rtm.5.json>
+
 ## [2.0.0] 2022-01-12
 
 - Mandatory properties `toolDriverName` and `toolDriverVersion` for SarifRunBuilder
