@@ -7,7 +7,7 @@
 <!-- [![codecov](https://codecov.io/gh/nvuillam/node-sarif-builder/branch/master/graph/badge.svg)](https://codecov.io/gh/nvuillam/node-sarif-builder) -->
 [![Mega-Linter](https://github.com/nvuillam/node-sarif-builder/workflows/MegaLinter/badge.svg?branch=main)](https://megalinter.github.io/)
 [![GitHub contributors](https://img.shields.io/github/contributors/nvuillam/node-sarif-builder.svg)](https://github.com/nvuillam/node-sarif-builder/graphs/contributors/)
-[![GitHub stars](https://img.shields.io/github/stars/nvuillam/node-sarif-builder?label=Star&maxAge=2592000)](https://GitHub.com/nvuillam/node-sarif-builder/stargazers/)
+[![GitHub stars](https://img.shields.io/github/stars/nvuillam/node-sarif-builder?label=Star&maxAge=3600)](https://GitHub.com/nvuillam/node-sarif-builder/stargazers/)
 [![License](https://img.shields.io/npm/l/node-sarif-builder.svg)](https://github.com/nvuillam/node-sarif-builder/blob/master/package.json)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
@@ -19,7 +19,7 @@ In order to **unify SAST tools output format**, more and more tools and services
 
 SARIF logs can be:
 - **Uploaded to DevOps tools**, like [Github](https://docs.github.com/en/code-security/code-scanning/integrating-with-code-scanning/sarif-support-for-code-scanning), [Azure DevOps](https://github.com/microsoft/sarif-azuredevops-extension) to show issues directly in their web UI
-- **Visualized in IDEs**, like [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=MS-SarifVSCode.sarif-viewer), [Visual Studio](https://marketplace.visualstudio.com/items?itemName=WDGIS.MicrosoftSarifViewer)
+- **Visualized in IDEs**, like [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=MS-SarifVSCode.sarif-viewer), [Visual Studio](https://marketplace.visualstudio.com/items?itemName=WDGIS.MicrosoftSarifViewer), [Jetbrains editors](https://plugins.jetbrains.com/plugin/16938-qodana)
 - **Aggregated by multi-language linters**, like [MegaLinter](https://megalinter.github.io/latest/)
 
 Example of linters that can output logs in SARIF format:
