@@ -16,3 +16,6 @@ PRE_COMMANDS:
     cwd: workspace
 JSON_JSONLINT_FILTER_REGEX_EXCLUDE: (\.vscode|tsconfig\.json)
 MARKDOWN_MARKDOWNLINT_FILTER_REGEX_EXCLUDE: (\\.github)
+REPOSITORY_TRIVY_ARGUMENTS:
+  - --skip-dirs
+  - ./node_modules/uri-js
