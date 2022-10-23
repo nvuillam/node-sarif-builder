@@ -4,6 +4,10 @@
 
 - Add your updates here :)
 
+## [2.0.3] 2022-10-23
+
+- Run yarn-audit-fix to upgrade dependencies with security issues (minimist, node-fetch)
+
 ## [2.0.2] 2022-01-30
 
 - Update License to MIT
