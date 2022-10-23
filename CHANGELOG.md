@@ -7,6 +7,7 @@
 ## [2.0.3] 2022-10-23
 
 - Run yarn-audit-fix to upgrade dependencies with security issues (minimist, node-fetch)
+- CI: Upgrade MegaLinter to v6
 
 ## [2.0.2] 2022-01-30
 
