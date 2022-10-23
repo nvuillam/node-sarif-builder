@@ -10,7 +10,9 @@ APPLY_FIXES: none # all, none, or list of linter keys
 SHOW_ELAPSED_TIME: true
 FILEIO_REPORTER: false
 PRE_COMMANDS:
-  - command: yarn
+  - command: yarn install --frozen-lockfile
+    cwd: workspace
+  - command: yarn add eslint-plugin-eslint-comments
     cwd: workspace
 JSON_JSONLINT_FILTER_REGEX_EXCLUDE: (\.vscode|tsconfig\.json)
 MARKDOWN_MARKDOWNLINT_FILTER_REGEX_EXCLUDE: (\\.github)
