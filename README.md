@@ -110,6 +110,8 @@ ___
 - For each found issue, create a SarifResultBuilder and add it to the SarifRunBuilder object
 
 ```javascript
+import { pathToFileURL } from 'url'
+
 // Add results
 for (const issue of issues) { // issues from your linter in any format
     const sarifResultBuilder = new SarifResultBuilder();
@@ -119,8 +121,8 @@ for (const issue of issues) { // issues from your linter in any format
         messageText: err.msg,                                     // Ex: "any is forbidden !"
         ruleId: err.rule,                                         // Ex: "no-any"
         fileUri: process.env.SARIF_URI_ABSOLUTE                   // Ex: src/myfile.ts
-            ? "file:///" + fileNm.replace(/\\/g, "/")
-            : path.relative(process.cwd(), fileNm)
+            ? pathToFileURL(fileNm)
+            : path.relative(process.cwd(), fileNm).replace(/\\/g, '/'),
     };
     // When possible, provide location of the issue in the source code
     if (issue.range) {
@@ -152,6 +154,8 @@ ___
 - Working in [npm-groovy-lint](https://github.com/nvuillam/npm-groovy-lint)
 
 ```javascript
+import { pathToFileURL } from 'url'
+
 function buildSarifResult(lintResult) {
     // SARIF builder
     const sarifBuilder = new SarifBuilder();
@@ -181,8 +185,8 @@ function buildSarifResult(lintResult) {
                 messageText: err.msg,
                 ruleId: err.rule,
                 fileUri: process.env.SARIF_URI_ABSOLUTE
-                    ? "file:///" + fileNm.replace(/\\/g, "/")
-                    : path.relative(process.cwd(), fileNm)
+                    ? pathToFileURL(fileNm)
+                    : path.relative(process.cwd(), fileNm).replace(/\\/g, '/')
             };
             if (err.range) {
                 sarifResultInit.startLine = fixLine(err.range.start.line);
