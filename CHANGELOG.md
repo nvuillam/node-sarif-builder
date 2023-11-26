@@ -2,8 +2,10 @@
 
 ## UNRELEASED
 
+- New minimal Node.js version >=18
 - Uprade Github Actions workflows
 - Upgrade MegaLinter
+- Upgrade npm dependencies
 
 ## [2.0.3] 2022-10-23
 
