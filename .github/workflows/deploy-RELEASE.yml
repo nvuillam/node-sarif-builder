@@ -7,11 +7,13 @@
 #######################################
 # Start the job on all push to master #
 #######################################
-name: 'Build & Deploy - RELEASE'
+name: "Build & Deploy - RELEASE"
 on:
   release:
     # Want to run the automation when a release is created
-    types: ['created']
+    types: ["created"]
+
+permissions: read-all
 
 ###############
 # Set the Job #
@@ -24,10 +26,10 @@ jobs:
       # Setup .npmrc file to publish to npm
       - uses: actions/setup-node@v1
         with:
-          node-version: '14.x'
-          registry-url: 'https://registry.npmjs.org'
+          node-version: "14.x"
+          registry-url: "https://registry.npmjs.org"
           # Defaults to the user or organization that owns the workflow file
-          scope: 'nvuillam'
+          scope: "nvuillam"
       - run: yarn
       - run: yarn publish
         env:

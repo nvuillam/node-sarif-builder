@@ -7,12 +7,14 @@
 #######################################
 # Start the job on all push to master #
 #######################################
-name: 'Build & Deploy - ALPHA'
+name: "Build & Deploy - ALPHA"
 on:
   push:
     branches:
       - alpha
       - dev
+
+permissions: read-all
 
 ###############
 # Set the Job #
@@ -26,11 +28,11 @@ jobs:
       # Setup .npmrc file to publish to npm
       - uses: actions/setup-node@v1
         with:
-          node-version: '14.x'
-          registry-url: 'https://registry.npmjs.org'
+          node-version: "14.x"
+          registry-url: "https://registry.npmjs.org"
           always-auth: true
           # Defaults to the user or organization that owns the workflow file
-          scope: 'nvuillam'
+          scope: "nvuillam"
       - run: yarn
       - run: yarn config set version-git-tag false
       - run: ALPHAID=$(date '+%Y%m%d%H%M') && yarn version --prepatch --preid="alpha$ALPHAID"
