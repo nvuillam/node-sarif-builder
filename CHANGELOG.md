@@ -5,7 +5,7 @@
 ## [3.0.0] 2023-11-26
 
 - BREAKING CHANGE: New minimal version of Node.js: v18
-- Uprade Github Actions workflows
+- Upgrade Github Actions workflows
 - Upgrade MegaLinter
 - Upgrade npm dependencies
 
