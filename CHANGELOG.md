@@ -2,7 +2,8 @@
 
 ## UNRELEASED
 
-- Add your updates here :)
+- Uprade Github Actions workflows
+- Upgrade MegaLinter
 
 ## [2.0.3] 2022-10-23
 
