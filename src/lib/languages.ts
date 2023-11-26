@@ -898,5 +898,5 @@ export const EXTENSIONS_LANGUAGES = {
   'rst.txt': 'reStructuredText',
   wisp: 'wisp',
   prg: 'xBase',
-  prw: 'xBase'
-}
+  prw: 'xBase',
+};
