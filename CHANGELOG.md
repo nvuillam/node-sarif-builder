@@ -2,7 +2,12 @@
 
 ## UNRELEASED
 
-- Add your updates here :)
+## [3.0.0] 2023-11-26
+
+- BREAKING CHANGE: New minimal version of Node.js: v18
+- Upgrade Github Actions workflows
+- Upgrade MegaLinter
+- Upgrade npm dependencies
 
 ## [2.0.3] 2022-10-23
 

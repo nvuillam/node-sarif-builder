@@ -1,5 +1,5 @@
 # Configuration file for MegaLinter
-# See all available variables at https://oxsecurity.github.io/megalinter/configuration/ and in linters documentation
+# See all available variables at https://megalinter.io/latest/configuration/ and in linters documentation
 
 APPLY_FIXES: none # all, none, or list of linter keys
 # ENABLE: # If you use ENABLE variable, all other languages/formats/tooling-formats will be disabled by default
@@ -9,6 +9,8 @@ APPLY_FIXES: none # all, none, or list of linter keys
 # - SPELL # Uncomment to disable checks of spelling mistakes
 SHOW_ELAPSED_TIME: true
 FILEIO_REPORTER: false
+DISABLE_LINTERS:
+  - TYPESCRIPT_STANDARD
 PRE_COMMANDS:
   - command: yarn install --frozen-lockfile
     cwd: workspace
@@ -19,3 +21,4 @@ MARKDOWN_MARKDOWNLINT_FILTER_REGEX_EXCLUDE: (\\.github)
 REPOSITORY_TRIVY_ARGUMENTS:
   - --skip-dirs
   - ./node_modules/uri-js
+TYPESCRIPT_DEFAULT_STYLE: prettier
