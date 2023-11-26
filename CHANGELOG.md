@@ -2,7 +2,9 @@
 
 ## UNRELEASED
 
-- New minimal Node.js version >=18
+## [3.0.0] 2023-11-26
+
+- BREAKING CHANGE: New minimal version of Node.js: v18
 - Uprade Github Actions workflows
 - Upgrade MegaLinter
 - Upgrade npm dependencies
