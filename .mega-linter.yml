@@ -19,3 +19,4 @@ MARKDOWN_MARKDOWNLINT_FILTER_REGEX_EXCLUDE: (\\.github)
 REPOSITORY_TRIVY_ARGUMENTS:
   - --skip-dirs
   - ./node_modules/uri-js
+TYPESCRIPT_DEFAULT_STYLE: prettier
