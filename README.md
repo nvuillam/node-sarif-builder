@@ -4,12 +4,12 @@
 [![Downloads/week](https://img.shields.io/npm/dw/node-sarif-builder.svg)](https://npmjs.org/package/node-sarif-builder)
 [![Downloads/total](https://img.shields.io/npm/dt/node-sarif-builder.svg)](https://npmjs.org/package/node-sarif-builder)
 [![Test](https://github.com/nvuillam/node-sarif-builder/workflows/Test/badge.svg?branch=main)](https://github.com/nvuillam/node-sarif-builder/actions?query=workflow%3ATest+branch%3Amain)
-<!-- [![codecov](https://codecov.io/gh/nvuillam/node-sarif-builder/branch/master/graph/badge.svg)](https://codecov.io/gh/nvuillam/node-sarif-builder) -->
 [![Mega-Linter](https://github.com/nvuillam/node-sarif-builder/workflows/MegaLinter/badge.svg?branch=main)](https://megalinter.github.io/)
 [![GitHub contributors](https://img.shields.io/github/contributors/nvuillam/node-sarif-builder.svg)](https://github.com/nvuillam/node-sarif-builder/graphs/contributors/)
 [![GitHub stars](https://img.shields.io/github/stars/nvuillam/node-sarif-builder?label=stars&maxAge=3600)](https://github.com/nvuillam/node-sarif-builder/stargazers/)
 [![License](https://img.shields.io/npm/l/node-sarif-builder.svg)](https://github.com/nvuillam/node-sarif-builder/blob/master/package.json)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+<!-- gh-dependents-info-used-by-start --><!-- gh-dependents-info-used-by-end -->
 
 ## Introduction
 
