@@ -7,7 +7,7 @@
 
 | Repository | Stars  |
 | :--------  | -----: |
-|[go-gitea/gitea](https://github.com/go-gitea/gitea) | 39719 |
+|[go-gitea/gitea](https://github.com/go-gitea/gitea) | 39720 |
 |[novuhq/novu](https://github.com/novuhq/novu) | 31327 |
 |[backstage/backstage](https://github.com/backstage/backstage) | 24451 |
 |[Unleash/unleash](https://github.com/Unleash/unleash) | 9713 |
