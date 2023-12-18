@@ -7,7 +7,7 @@ name: GitHub Dependents Info
 on:
   # On manual launch
   workflow_dispatch:
-  # On every push on selected branches
+  # On every push on selected branches (usually just main)
   push:
     branches: [main, alpha]
   # Scheduled interval: Use CRON format https://crontab.guru/
@@ -37,14 +37,13 @@ jobs:
 
       # Collect data & generate markdown
       - name: GitHub Dependents Info
-        id: gdi
         uses: nvuillam/github-dependents-info@alpha
         with:
           repo: ${{ github.repository }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # Create pull request if event is workflow-dispatch or push
+      # Create pull request
       - name: Create Pull Request
         id: cpr
         uses: peter-evans/create-pull-request@v5
