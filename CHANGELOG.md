@@ -2,6 +2,8 @@
 
 ## UNRELEASED
 
+- Add github-dependents-info workflow
+
 ## [3.0.0] 2023-11-26
 
 - BREAKING CHANGE: New minimal version of Node.js: v18
