@@ -9,7 +9,8 @@
 [![GitHub stars](https://img.shields.io/github/stars/nvuillam/node-sarif-builder?label=stars&maxAge=3600)](https://github.com/nvuillam/node-sarif-builder/stargazers/)
 [![License](https://img.shields.io/npm/l/node-sarif-builder.svg)](https://github.com/nvuillam/node-sarif-builder/blob/master/package.json)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-<!-- gh-dependents-info-used-by-start --><!-- gh-dependents-info-used-by-end -->
+<!-- gh-dependents-info-used-by-start -->
+[![](https://img.shields.io/static/v1?label=Used%20by&message=253&color=informational&logo=slickpic)](https://github.com/nvuillam/node-sarif-builder/network/dependents)<!-- gh-dependents-info-used-by-end -->
 
 ## Introduction
 
