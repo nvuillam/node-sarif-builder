@@ -50,7 +50,7 @@ jobs:
 
       # Workaround for git issues
       - name: Prepare commit
-        run: sudo chown -Rc $UID .git/
+        run: sudo chown -R $USER:$USER .
 
       # Create pull request
       - name: Create Pull Request
