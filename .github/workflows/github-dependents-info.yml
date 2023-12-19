@@ -12,7 +12,7 @@ on:
     branches: [main, setup-gdi]
   # Scheduled interval: Use CRON format https://crontab.guru/
   schedule:
-    - cron: "0 0 * * 0" # Every sunday at midnight
+    - cron: '0 0 * * 0' # Every sunday at midnight
 
 permissions: read-all
 
@@ -59,10 +59,10 @@ jobs:
         with:
           token: ${{ secrets.PAT || secrets.GITHUB_TOKEN  }}
           branch: github-dependents-info-auto-update
-          commit-message: "[GitHub Dependents Info] Updated markdown file(s)"
+          commit-message: '[GitHub Dependents Info] Updated markdown file(s)'
           delete-branch: true
-          title: "[GitHub Dependents Info] Updated markdown file"
-          body: "_Generated with [github-dependents-info](https://github.com/nvuillam/github-dependents-info), by [Nicolas Vuillamy](https://github.com/nvuillam)_"
+          title: '[GitHub Dependents Info] Updated markdown file'
+          body: '_Generated with [github-dependents-info](https://github.com/nvuillam/github-dependents-info), by [Nicolas Vuillamy](https://github.com/nvuillam)_'
           labels: documentation
       - name: Create PR output
         run: |
