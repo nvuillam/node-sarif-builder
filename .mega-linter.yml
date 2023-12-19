@@ -9,6 +9,9 @@ APPLY_FIXES: none # all, none, or list of linter keys
 # - SPELL # Uncomment to disable checks of spelling mistakes
 SHOW_ELAPSED_TIME: true
 FILEIO_REPORTER: false
+DISABLE_ERRORS_LINTERS:
+  - ACTION_ACTIONLINT
+SPELL_FILTER_REGEX_EXCLUDE: (github-dependents-info)
 DISABLE_LINTERS:
   - TYPESCRIPT_STANDARD
 PRE_COMMANDS:
