@@ -7,215 +7,215 @@
 
 | Repository | Stars  |
 | :--------  | -----: |
-|[go-gitea/gitea](https://github.com/go-gitea/gitea) | 39761 |
-|[novuhq/novu](https://github.com/novuhq/novu) | 31354 |
-|[backstage/backstage](https://github.com/backstage/backstage) | 24472 |
-|[Unleash/unleash](https://github.com/Unleash/unleash) | 9732 |
-|[stoplightio/spectral](https://github.com/stoplightio/spectral) | 2122 |
-|[trailheadapps/ebikes-lwc](https://github.com/trailheadapps/ebikes-lwc) | 719 |
-|[secretlint/secretlint](https://github.com/secretlint/secretlint) | 595 |
-|[lichess-org/api](https://github.com/lichess-org/api) | 376 |
-|[OlympusDAO/olympus-frontend](https://github.com/OlympusDAO/olympus-frontend) | 282 |
-|[paypal/paypal-js](https://github.com/paypal/paypal-js) | 189 |
-|[jsdelivr/data.jsdelivr.com](https://github.com/jsdelivr/data.jsdelivr.com) | 189 |
-|[jsdelivr/globalping](https://github.com/jsdelivr/globalping) | 180 |
-|[nvuillam/npm-groovy-lint](https://github.com/nvuillam/npm-groovy-lint) | 168 |
-|[asyncapi/cli](https://github.com/asyncapi/cli) | 150 |
-|[airbytehq/airbyte-platform](https://github.com/airbytehq/airbyte-platform) | 108 |
-|[nix-community/nur-combined](https://github.com/nix-community/nur-combined) | 91 |
-|[nvuillam/vscode-groovy-lint](https://github.com/nvuillam/vscode-groovy-lint) | 66 |
-|[stac-utils/stac-server](https://github.com/stac-utils/stac-server) | 60 |
-|[Southclaws/storyden](https://github.com/Southclaws/storyden) | 60 |
-|[asyncapi/html-template](https://github.com/asyncapi/html-template) | 48 |
-|[salesforce/utam-js-recipes](https://github.com/salesforce/utam-js-recipes) | 39 |
-|[soundchaser128/clip-mash](https://github.com/soundchaser128/clip-mash) | 35 |
-|[BRP-API/Haal-Centraal-BRP-bevragen](https://github.com/BRP-API/Haal-Centraal-BRP-bevragen) | 29 |
-|[forem/forem-docs](https://github.com/forem/forem-docs) | 24 |
-|[asyncapi/markdown-template](https://github.com/asyncapi/markdown-template) | 20 |
-|[EvgenyParomov/block-list](https://github.com/EvgenyParomov/block-list) | 18 |
-|[VNG-Realisatie/Haal-Centraal-BRK-bevragen](https://github.com/VNG-Realisatie/Haal-Centraal-BRK-bevragen) | 18 |
-|[eightcard/openapi-to-normalizr](https://github.com/eightcard/openapi-to-normalizr) | 14 |
-|[melloware/quarkus-primereact](https://github.com/melloware/quarkus-primereact) | 9 |
-|[danicc097/openapi-go-gin-postgres-sqlc](https://github.com/danicc097/openapi-go-gin-postgres-sqlc) | 8 |
-|[tegonal/lasius](https://github.com/tegonal/lasius) | 8 |
-|[AxisCommunications/backstage-plugins](https://github.com/AxisCommunications/backstage-plugins) | 6 |
-|[oasisprotocol/explorer](https://github.com/oasisprotocol/explorer) | 6 |
-|[decentraland/catalyst-api-specs](https://github.com/decentraland/catalyst-api-specs) | 6 |
-|[felipe-bergamaschi/swagger-auto-integration](https://github.com/felipe-bergamaschi/swagger-auto-integration) | 6 |
-|[isaac545454/react-utils](https://github.com/isaac545454/react-utils) | 6 |
-|[navikt/sosialhjelp-soknad](https://github.com/navikt/sosialhjelp-soknad) | 5 |
-|[one-zero-eight/InNoHassle-Website](https://github.com/one-zero-eight/InNoHassle-Website) | 5 |
-|[snacker-tracker/reporter](https://github.com/snacker-tracker/reporter) | 5 |
-|[lasconic/openapi-finary](https://github.com/lasconic/openapi-finary) | 5 |
-|[VNG-Realisatie/Haal-Centraal-BAG-bevragen](https://github.com/VNG-Realisatie/Haal-Centraal-BAG-bevragen) | 5 |
-|[docupike/docs](https://github.com/docupike/docs) | 5 |
-|[vorillaz/react-openapi-swr](https://github.com/vorillaz/react-openapi-swr) | 4 |
-|[dalisoft/airlight](https://github.com/dalisoft/airlight) | 4 |
-|[BRP-API/Haal-Centraal-Reisdocumenten-bevragen](https://github.com/BRP-API/Haal-Centraal-Reisdocumenten-bevragen) | 3 |
-|[waanlabs/gitcoffee](https://github.com/waanlabs/gitcoffee) | 3 |
-|[Vizzuality/skytruth-30x30](https://github.com/Vizzuality/skytruth-30x30) | 3 |
-|[hackworthltd/primer-app](https://github.com/hackworthltd/primer-app) | 3 |
-|[ndruger/development_tool_test](https://github.com/ndruger/development_tool_test) | 3 |
-|[svierk/salesforce-utam-e2e-testing](https://github.com/svierk/salesforce-utam-e2e-testing) | 3 |
-|[miles-w-3/web-dev-final-project](https://github.com/miles-w-3/web-dev-final-project) | 2 |
-|[BRP-API/Haal-Centraal-BRP-historie-bevragen](https://github.com/BRP-API/Haal-Centraal-BRP-historie-bevragen) | 2 |
-|[ABoyWithALaptop/code-review-chatGPT-sadTeam](https://github.com/ABoyWithALaptop/code-review-chatGPT-sadTeam) | 2 |
-|[AssemblyAI/assemblyai-api-spec](https://github.com/AssemblyAI/assemblyai-api-spec) | 2 |
-|[BRP-API/Haal-Centraal-BRP-bewoning](https://github.com/BRP-API/Haal-Centraal-BRP-bewoning) | 2 |
-|[VNG-Realisatie/Haal-Centraal-common](https://github.com/VNG-Realisatie/Haal-Centraal-common) | 2 |
-|[aboe026/software-update-checker](https://github.com/aboe026/software-update-checker) | 2 |
-|[gitdocs-dev/gitea](https://github.com/gitdocs-dev/gitea) | 1 |
-|[eai04191/resonite-api-spec](https://github.com/eai04191/resonite-api-spec) | 1 |
-|[duynghiadev/Learn-Code-Youtube](https://github.com/duynghiadev/Learn-Code-Youtube) | 1 |
-|[ByteCrumb/Umbraco.Community.DeliveryApiExtensions](https://github.com/ByteCrumb/Umbraco.Community.DeliveryApiExtensions) | 1 |
-|[navikt/sosialhjelp-innsyn](https://github.com/navikt/sosialhjelp-innsyn) | 1 |
-|[Moaaz-Adel/automation-exercise-cypress](https://github.com/Moaaz-Adel/automation-exercise-cypress) | 1 |
-|[EugeniBykovski/blocker-host-client](https://github.com/EugeniBykovski/blocker-host-client) | 1 |
-|[fsf-silva-ferreira/salesforce-practice](https://github.com/fsf-silva-ferreira/salesforce-practice) | 1 |
-|[beingofexistence13/mediaflow](https://github.com/beingofexistence13/mediaflow) | 1 |
-|[SmartBear-DevRel/webinar-security-by-design](https://github.com/SmartBear-DevRel/webinar-security-by-design) | 1 |
-|[stac-api-extensions/filter](https://github.com/stac-api-extensions/filter) | 1 |
-|[flussonic/openapi-demo](https://github.com/flussonic/openapi-demo) | 1 |
-|[jamalsoueidan/booking-api](https://github.com/jamalsoueidan/booking-api) | 1 |
-|[govuk-one-login/account-interventions-service](https://github.com/govuk-one-login/account-interventions-service) | 1 |
-|[Vizzuality/cms-scaffold](https://github.com/Vizzuality/cms-scaffold) | 1 |
-|[365614269/CNCF-Incubating](https://github.com/365614269/CNCF-Incubating) | 1 |
-|[twynb/AudioStreamSplitting](https://github.com/twynb/AudioStreamSplitting) | 1 |
-|[mgansler/plusone](https://github.com/mgansler/plusone) | 1 |
-|[braze-community/braze-specification](https://github.com/braze-community/braze-specification) | 1 |
-|[VNG-Realisatie/Haal-Centraal-BRK-event-sourcing](https://github.com/VNG-Realisatie/Haal-Centraal-BRK-event-sourcing) | 1 |
-|[puni9869/gitea](https://github.com/puni9869/gitea) | 1 |
-|[jdschleicher/demo-dreamhouse-lwc-shift-left](https://github.com/jdschleicher/demo-dreamhouse-lwc-shift-left) | 1 |
-|[mydeveloperday/npm-audit-sarif](https://github.com/mydeveloperday/npm-audit-sarif) | 1 |
-|[jasonsjones/lwr-sandbox](https://github.com/jasonsjones/lwr-sandbox) | 1 |
-|[swfz/git-hooks](https://github.com/swfz/git-hooks) | 1 |
-|[cvent/spectral-bug-example](https://github.com/cvent/spectral-bug-example) | 0 |
-|[encypher-studio/newsware_clients_documentation](https://github.com/encypher-studio/newsware_clients_documentation) | 0 |
-|[akshaychavan7/Covey.town](https://github.com/akshaychavan7/Covey.town) | 0 |
-|[sanjana2296/TicTacToe](https://github.com/sanjana2296/TicTacToe) | 0 |
-|[VladCherniavsky/Health-and-Activity-Recommender](https://github.com/VladCherniavsky/Health-and-Activity-Recommender) | 0 |
-|[abhayruby1019/backS](https://github.com/abhayruby1019/backS) | 0 |
-|[DmitriyBrewer/gitea-clone](https://github.com/DmitriyBrewer/gitea-clone) | 0 |
-|[DmitriyBrewer/test-clgit](https://github.com/DmitriyBrewer/test-clgit) | 0 |
-|[InTheCloudDan/backstage-testing](https://github.com/InTheCloudDan/backstage-testing) | 0 |
-|[ndelucca/gitea](https://github.com/ndelucca/gitea) | 0 |
-|[kulp006/backstage](https://github.com/kulp006/backstage) | 0 |
-|[echoix/npm-groovy-lint](https://github.com/echoix/npm-groovy-lint) | 0 |
-|[VerdanTech/VerdanTech-Frontend](https://github.com/VerdanTech/VerdanTech-Frontend) | 0 |
-|[DavidZbarsky-at/nodejs-repro](https://github.com/DavidZbarsky-at/nodejs-repro) | 0 |
-|[aryalweb/backstage1](https://github.com/aryalweb/backstage1) | 0 |
-|[lishogi-org/api](https://github.com/lishogi-org/api) | 0 |
-|[VisioLab/cash-register-api](https://github.com/VisioLab/cash-register-api) | 0 |
-|[generics/fake-news](https://github.com/generics/fake-news) | 0 |
-|[RadioAktywne/website](https://github.com/RadioAktywne/website) | 0 |
-|[WebWorkTruck/wt-panel-frontend](https://github.com/WebWorkTruck/wt-panel-frontend) | 0 |
-|[pavelkornev/spectral-example](https://github.com/pavelkornev/spectral-example) | 0 |
-|[dyolfan/trading-journal-app](https://github.com/dyolfan/trading-journal-app) | 0 |
-|[BRP-API/Haal-Centraal-BRP-Update-API](https://github.com/BRP-API/Haal-Centraal-BRP-Update-API) | 0 |
-|[mnabeel786/Salesforce-POS](https://github.com/mnabeel786/Salesforce-POS) | 0 |
-|[jsoref/forgejo-forgejo](https://github.com/jsoref/forgejo-forgejo) | 0 |
-|[Niko-Danilov/Kemb](https://github.com/Niko-Danilov/Kemb) | 0 |
-|[vivek-tv-test/sample_sf](https://github.com/vivek-tv-test/sample_sf) | 0 |
-|[dedaMazai/browseExtension](https://github.com/dedaMazai/browseExtension) | 0 |
-|[jasonsjones/lwr-project](https://github.com/jasonsjones/lwr-project) | 0 |
-|[industrial-demon/nx-monorepo](https://github.com/industrial-demon/nx-monorepo) | 0 |
-|[dozjul/gitea](https://github.com/dozjul/gitea) | 0 |
-|[DavidZbarsky-at/repo-mapping-manifest-repro](https://github.com/DavidZbarsky-at/repo-mapping-manifest-repro) | 0 |
-|[jamalsoueidan/booking-store](https://github.com/jamalsoueidan/booking-store) | 0 |
-|[neu-cs4530/fall23-team-project-group-706](https://github.com/neu-cs4530/fall23-team-project-group-706) | 0 |
-|[k2662/forgejo](https://github.com/k2662/forgejo) | 0 |
-|[ueki-tomohiro/storybook-visual-regression-test](https://github.com/ueki-tomohiro/storybook-visual-regression-test) | 0 |
-|[uncleaar/extension](https://github.com/uncleaar/extension) | 0 |
-|[Husan-Negmatullaev/block-list-extension](https://github.com/Husan-Negmatullaev/block-list-extension) | 0 |
-|[GuruDevCoder/ThinkEasy.cz_Test1](https://github.com/GuruDevCoder/ThinkEasy.cz_Test1) | 0 |
-|[janus-api-idp/spectral-image](https://github.com/janus-api-idp/spectral-image) | 0 |
-|[3str-webdev/web-block-service-extension](https://github.com/3str-webdev/web-block-service-extension) | 0 |
-|[Djiypyk/block_plugin](https://github.com/Djiypyk/block_plugin) | 0 |
-|[bbusljeta/tanstack-query-demo](https://github.com/bbusljeta/tanstack-query-demo) | 0 |
-|[digitalimplementer/chrome-ext-Blocker](https://github.com/digitalimplementer/chrome-ext-Blocker) | 0 |
-|[NatureSL/test-vite-react-extension](https://github.com/NatureSL/test-vite-react-extension) | 0 |
-|[Lyshka/extension-block](https://github.com/Lyshka/extension-block) | 0 |
-|[cibulka/thinkeasy](https://github.com/cibulka/thinkeasy) | 0 |
-|[AisultanBaltabayev/chrom-extension-block-list](https://github.com/AisultanBaltabayev/chrom-extension-block-list) | 0 |
-|[Denis-cyber/block-list](https://github.com/Denis-cyber/block-list) | 0 |
-|[sarvex/unleash](https://github.com/sarvex/unleash) | 0 |
-|[ratiomark/block-list](https://github.com/ratiomark/block-list) | 0 |
-|[MrFus10n/benny-test](https://github.com/MrFus10n/benny-test) | 0 |
-|[bert-bae/adventurebot](https://github.com/bert-bae/adventurebot) | 0 |
-|[jauderho/gitea](https://github.com/jauderho/gitea) | 0 |
-|[Spandana-dara/Covey-Town](https://github.com/Spandana-dara/Covey-Town) | 0 |
-|[nokken65/gifmu](https://github.com/nokken65/gifmu) | 0 |
-|[fyargat/countries_client](https://github.com/fyargat/countries_client) | 0 |
-|[NatureSL/test-nextjs-client](https://github.com/NatureSL/test-nextjs-client) | 0 |
-|[ARustamA/browser_block_extention](https://github.com/ARustamA/browser_block_extention) | 0 |
-|[cLubber1337/next-fsd](https://github.com/cLubber1337/next-fsd) | 0 |
-|[youliangdao/async-values-form](https://github.com/youliangdao/async-values-form) | 0 |
-|[Vadim2308/EasyBlockExtension](https://github.com/Vadim2308/EasyBlockExtension) | 0 |
-|[Vizzuality/ccsa](https://github.com/Vizzuality/ccsa) | 0 |
-|[nachmz42/what-is-that-fruit-front](https://github.com/nachmz42/what-is-that-fruit-front) | 0 |
-|[morellodev/openapi-demo](https://github.com/morellodev/openapi-demo) | 0 |
-|[bert-bae/haiku-weather](https://github.com/bert-bae/haiku-weather) | 0 |
-|[andmoredev/aws-community-day-mx](https://github.com/andmoredev/aws-community-day-mx) | 0 |
-|[brekys/website-blocker-extension](https://github.com/brekys/website-blocker-extension) | 0 |
-|[MaDKnighT404/stop-list-extension](https://github.com/MaDKnighT404/stop-list-extension) | 0 |
-|[RuslanBely/client-block-extension](https://github.com/RuslanBely/client-block-extension) | 0 |
-|[brekys/website-blocker-client](https://github.com/brekys/website-blocker-client) | 0 |
-|[tranduybau/df-final-project](https://github.com/tranduybau/df-final-project) | 0 |
-|[iqb-vocabs/validate-md-profile](https://github.com/iqb-vocabs/validate-md-profile) | 0 |
-|[Breazzz/block-extension](https://github.com/Breazzz/block-extension) | 0 |
-|[tienan92it/bookstore-demo](https://github.com/tienan92it/bookstore-demo) | 0 |
-|[felipe-bergamaschi/gluk](https://github.com/felipe-bergamaschi/gluk) | 0 |
-|[extroblade/block-websites](https://github.com/extroblade/block-websites) | 0 |
-|[fralomb/.dotfiles](https://github.com/fralomb/.dotfiles) | 0 |
-|[DezengKong/Software-Development-ip2](https://github.com/DezengKong/Software-Development-ip2) | 0 |
-|[yoolinkaa/Flower](https://github.com/yoolinkaa/Flower) | 0 |
-|[allenYetu211/oin](https://github.com/allenYetu211/oin) | 0 |
-|[dipsaus9/framboos-2023](https://github.com/dipsaus9/framboos-2023) | 0 |
-|[ctrlx-altf4/career-climb](https://github.com/ctrlx-altf4/career-climb) | 0 |
-|[likuny0415/activity10](https://github.com/likuny0415/activity10) | 0 |
-|[Vizzuality/ncs-prototyping-network](https://github.com/Vizzuality/ncs-prototyping-network) | 0 |
-|[mikekistler/contoso-fiber](https://github.com/mikekistler/contoso-fiber) | 0 |
-|[stac-api-extensions/query](https://github.com/stac-api-extensions/query) | 0 |
-|[ws-4020/mobile-app-crib-notes](https://github.com/ws-4020/mobile-app-crib-notes) | 0 |
-|[roboticsoutreach/pyinv-next-ui](https://github.com/roboticsoutreach/pyinv-next-ui) | 0 |
-|[stac-api-extensions/sort](https://github.com/stac-api-extensions/sort) | 0 |
-|[surdarmaputra/world-clock](https://github.com/surdarmaputra/world-clock) | 0 |
-|[phonghpml/my-project](https://github.com/phonghpml/my-project) | 0 |
-|[aboe026/release-node-project](https://github.com/aboe026/release-node-project) | 0 |
-|[Orcasa-Platform/orcasa](https://github.com/Orcasa-Platform/orcasa) | 0 |
-|[cplprince/kingdoms](https://github.com/cplprince/kingdoms) | 0 |
-|[devraj/debug-remixv2-rvf](https://github.com/devraj/debug-remixv2-rvf) | 0 |
-|[felipe-bergamaschi/elofy](https://github.com/felipe-bergamaschi/elofy) | 0 |
-|[unfoldingWord/dcs](https://github.com/unfoldingWord/dcs) | 0 |
-|[Vizzuality/tnc-human-rights-tool](https://github.com/Vizzuality/tnc-human-rights-tool) | 0 |
-|[boost-entropy-golang/gitea](https://github.com/boost-entropy-golang/gitea) | 0 |
-|[wieczorekkevin/CS490-Directory](https://github.com/wieczorekkevin/CS490-Directory) | 0 |
-|[mesmerlord/freeheat_test](https://github.com/mesmerlord/freeheat_test) | 0 |
-|[likuny0415/activity4](https://github.com/likuny0415/activity4) | 0 |
-|[harryzcy/gitea](https://github.com/harryzcy/gitea) | 0 |
-|[paveg/valos](https://github.com/paveg/valos) | 0 |
-|[wULLSnpAXbWZGYDYyhWTKKspEQoaYxXyhoisqHf/gitea](https://github.com/wULLSnpAXbWZGYDYyhWTKKspEQoaYxXyhoisqHf/gitea) | 0 |
-|[KrisKnez/easy-notes-frontend](https://github.com/KrisKnez/easy-notes-frontend) | 0 |
-|[TNorsang/TicTacToeLogic](https://github.com/TNorsang/TicTacToeLogic) | 0 |
-|[Movie-Mingle/Movie-mingle-client](https://github.com/Movie-Mingle/Movie-mingle-client) | 0 |
-|[naresh699/shoe-app](https://github.com/naresh699/shoe-app) | 0 |
-|[jmratel/ebikes-demo-brp](https://github.com/jmratel/ebikes-demo-brp) | 0 |
-|[kswatt22/EbikeDX](https://github.com/kswatt22/EbikeDX) | 0 |
-|[marcilenne/LWCBasics](https://github.com/marcilenne/LWCBasics) | 0 |
-|[sravanthiNetha/ebikes](https://github.com/sravanthiNetha/ebikes) | 0 |
-|[kumod1990/LWC](https://github.com/kumod1990/LWC) | 0 |
-|[aboe026/node-update-dependencies](https://github.com/aboe026/node-update-dependencies) | 0 |
-|[a-chandusfdc/SFDCPlayground](https://github.com/a-chandusfdc/SFDCPlayground) | 0 |
-|[mydeveloperday/spectral-sarif](https://github.com/mydeveloperday/spectral-sarif) | 0 |
-|[Sidatii/ebikes-lwc](https://github.com/Sidatii/ebikes-lwc) | 0 |
-|[katalon-labs/katalon-chrome-recorder](https://github.com/katalon-labs/katalon-chrome-recorder) | 0 |
-|[mashafrancis/sa-jenkins](https://github.com/mashafrancis/sa-jenkins) | 0 |
-|[schnitz-air/innocent-repo](https://github.com/schnitz-air/innocent-repo) | 0 |
-|[katalon-labs/katalon-recorder-extension](https://github.com/katalon-labs/katalon-recorder-extension) | 0 |
-|[azu/secretlint-sarif](https://github.com/azu/secretlint-sarif) | 0 |
-|[k-hal/secretlint](https://github.com/k-hal/secretlint) | 0 |
-|[aboe026/data-structures](https://github.com/aboe026/data-structures) | 0 |
-|[aboe026/shields.io-badge-results](https://github.com/aboe026/shields.io-badge-results) | 0 |
-|[NOUIY/npm-groovy-lint](https://github.com/NOUIY/npm-groovy-lint) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/12724356?s=40&v=4" width="20" height="20" alt=""> [go-gitea/gitea](https://github.com/go-gitea/gitea) | 39761 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/77433905?s=40&v=4" width="20" height="20" alt=""> [novuhq/novu](https://github.com/novuhq/novu) | 31354 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/72526453?s=40&v=4" width="20" height="20" alt=""> [backstage/backstage](https://github.com/backstage/backstage) | 24472 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/23053233?s=40&v=4" width="20" height="20" alt=""> [Unleash/unleash](https://github.com/Unleash/unleash) | 9732 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/10767217?s=40&v=4" width="20" height="20" alt=""> [stoplightio/spectral](https://github.com/stoplightio/spectral) | 2122 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/29558898?s=40&v=4" width="20" height="20" alt=""> [trailheadapps/ebikes-lwc](https://github.com/trailheadapps/ebikes-lwc) | 719 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/60812035?s=40&v=4" width="20" height="20" alt=""> [secretlint/secretlint](https://github.com/secretlint/secretlint) | 595 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/16491637?s=40&v=4" width="20" height="20" alt=""> [lichess-org/api](https://github.com/lichess-org/api) | 376 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/79434537?s=40&v=4" width="20" height="20" alt=""> [OlympusDAO/olympus-frontend](https://github.com/OlympusDAO/olympus-frontend) | 282 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/476675?s=40&v=4" width="20" height="20" alt=""> [paypal/paypal-js](https://github.com/paypal/paypal-js) | 189 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/6191378?s=40&v=4" width="20" height="20" alt=""> [jsdelivr/data.jsdelivr.com](https://github.com/jsdelivr/data.jsdelivr.com) | 189 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/6191378?s=40&v=4" width="20" height="20" alt=""> [jsdelivr/globalping](https://github.com/jsdelivr/globalping) | 180 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/17500430?s=40&v=4" width="20" height="20" alt=""> [nvuillam/npm-groovy-lint](https://github.com/nvuillam/npm-groovy-lint) | 168 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/16401334?s=40&v=4" width="20" height="20" alt=""> [asyncapi/cli](https://github.com/asyncapi/cli) | 150 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/59758427?s=40&v=4" width="20" height="20" alt=""> [airbytehq/airbyte-platform](https://github.com/airbytehq/airbyte-platform) | 108 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/33221035?s=40&v=4" width="20" height="20" alt=""> [nix-community/nur-combined](https://github.com/nix-community/nur-combined) | 91 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/17500430?s=40&v=4" width="20" height="20" alt=""> [nvuillam/vscode-groovy-lint](https://github.com/nvuillam/vscode-groovy-lint) | 66 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/58087398?s=40&v=4" width="20" height="20" alt=""> [stac-utils/stac-server](https://github.com/stac-utils/stac-server) | 60 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/1636971?s=40&v=4" width="20" height="20" alt=""> [Southclaws/storyden](https://github.com/Southclaws/storyden) | 60 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/16401334?s=40&v=4" width="20" height="20" alt=""> [asyncapi/html-template](https://github.com/asyncapi/html-template) | 48 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/453694?s=40&v=4" width="20" height="20" alt=""> [salesforce/utam-js-recipes](https://github.com/salesforce/utam-js-recipes) | 39 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/69268557?s=40&v=4" width="20" height="20" alt=""> [soundchaser128/clip-mash](https://github.com/soundchaser128/clip-mash) | 35 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/118751532?s=40&v=4" width="20" height="20" alt=""> [BRP-API/Haal-Centraal-BRP-bevragen](https://github.com/BRP-API/Haal-Centraal-BRP-bevragen) | 29 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/65030610?s=40&v=4" width="20" height="20" alt=""> [forem/forem-docs](https://github.com/forem/forem-docs) | 24 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/16401334?s=40&v=4" width="20" height="20" alt=""> [asyncapi/markdown-template](https://github.com/asyncapi/markdown-template) | 20 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/87126126?s=40&v=4" width="20" height="20" alt=""> [EvgenyParomov/block-list](https://github.com/EvgenyParomov/block-list) | 18 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/34739001?s=40&v=4" width="20" height="20" alt=""> [VNG-Realisatie/Haal-Centraal-BRK-bevragen](https://github.com/VNG-Realisatie/Haal-Centraal-BRK-bevragen) | 18 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/1784819?s=40&v=4" width="20" height="20" alt=""> [eightcard/openapi-to-normalizr](https://github.com/eightcard/openapi-to-normalizr) | 14 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/4399574?s=40&v=4" width="20" height="20" alt=""> [melloware/quarkus-primereact](https://github.com/melloware/quarkus-primereact) | 9 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/71724149?s=40&v=4" width="20" height="20" alt=""> [danicc097/openapi-go-gin-postgres-sqlc](https://github.com/danicc097/openapi-go-gin-postgres-sqlc) | 8 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/3404785?s=40&v=4" width="20" height="20" alt=""> [tegonal/lasius](https://github.com/tegonal/lasius) | 8 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/6449531?s=40&v=4" width="20" height="20" alt=""> [AxisCommunications/backstage-plugins](https://github.com/AxisCommunications/backstage-plugins) | 6 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/52803776?s=40&v=4" width="20" height="20" alt=""> [oasisprotocol/explorer](https://github.com/oasisprotocol/explorer) | 6 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/12685795?s=40&v=4" width="20" height="20" alt=""> [decentraland/catalyst-api-specs](https://github.com/decentraland/catalyst-api-specs) | 6 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/55595657?s=40&v=4" width="20" height="20" alt=""> [felipe-bergamaschi/swagger-auto-integration](https://github.com/felipe-bergamaschi/swagger-auto-integration) | 6 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/93602614?s=40&v=4" width="20" height="20" alt=""> [isaac545454/react-utils](https://github.com/isaac545454/react-utils) | 6 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/11848947?s=40&v=4" width="20" height="20" alt=""> [navikt/sosialhjelp-soknad](https://github.com/navikt/sosialhjelp-soknad) | 5 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/113095766?s=40&v=4" width="20" height="20" alt=""> [one-zero-eight/InNoHassle-Website](https://github.com/one-zero-eight/InNoHassle-Website) | 5 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/59108816?s=40&v=4" width="20" height="20" alt=""> [snacker-tracker/reporter](https://github.com/snacker-tracker/reporter) | 5 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/234271?s=40&v=4" width="20" height="20" alt=""> [lasconic/openapi-finary](https://github.com/lasconic/openapi-finary) | 5 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/34739001?s=40&v=4" width="20" height="20" alt=""> [VNG-Realisatie/Haal-Centraal-BAG-bevragen](https://github.com/VNG-Realisatie/Haal-Centraal-BAG-bevragen) | 5 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/116563809?s=40&v=4" width="20" height="20" alt=""> [docupike/docs](https://github.com/docupike/docs) | 5 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/1022166?s=40&v=4" width="20" height="20" alt=""> [vorillaz/react-openapi-swr](https://github.com/vorillaz/react-openapi-swr) | 4 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/3511344?s=40&v=4" width="20" height="20" alt=""> [dalisoft/airlight](https://github.com/dalisoft/airlight) | 4 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/118751532?s=40&v=4" width="20" height="20" alt=""> [BRP-API/Haal-Centraal-Reisdocumenten-bevragen](https://github.com/BRP-API/Haal-Centraal-Reisdocumenten-bevragen) | 3 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/5220127?s=40&v=4" width="20" height="20" alt=""> [waanlabs/gitcoffee](https://github.com/waanlabs/gitcoffee) | 3 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/305994?s=40&v=4" width="20" height="20" alt=""> [Vizzuality/skytruth-30x30](https://github.com/Vizzuality/skytruth-30x30) | 3 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/42328359?s=40&v=4" width="20" height="20" alt=""> [hackworthltd/primer-app](https://github.com/hackworthltd/primer-app) | 3 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/534079?s=40&v=4" width="20" height="20" alt=""> [ndruger/development_tool_test](https://github.com/ndruger/development_tool_test) | 3 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/16227041?s=40&v=4" width="20" height="20" alt=""> [svierk/salesforce-utam-e2e-testing](https://github.com/svierk/salesforce-utam-e2e-testing) | 3 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/56934159?s=40&v=4" width="20" height="20" alt=""> [miles-w-3/web-dev-final-project](https://github.com/miles-w-3/web-dev-final-project) | 2 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/118751532?s=40&v=4" width="20" height="20" alt=""> [BRP-API/Haal-Centraal-BRP-historie-bevragen](https://github.com/BRP-API/Haal-Centraal-BRP-historie-bevragen) | 2 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/46893278?s=40&v=4" width="20" height="20" alt=""> [ABoyWithALaptop/code-review-chatGPT-sadTeam](https://github.com/ABoyWithALaptop/code-review-chatGPT-sadTeam) | 2 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/24515738?s=40&v=4" width="20" height="20" alt=""> [AssemblyAI/assemblyai-api-spec](https://github.com/AssemblyAI/assemblyai-api-spec) | 2 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/118751532?s=40&v=4" width="20" height="20" alt=""> [BRP-API/Haal-Centraal-BRP-bewoning](https://github.com/BRP-API/Haal-Centraal-BRP-bewoning) | 2 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/34739001?s=40&v=4" width="20" height="20" alt=""> [VNG-Realisatie/Haal-Centraal-common](https://github.com/VNG-Realisatie/Haal-Centraal-common) | 2 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/11340779?s=40&v=4" width="20" height="20" alt=""> [aboe026/software-update-checker](https://github.com/aboe026/software-update-checker) | 2 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/152412520?s=40&v=4" width="20" height="20" alt=""> [gitdocs-dev/gitea](https://github.com/gitdocs-dev/gitea) | 1 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/3516343?s=40&v=4" width="20" height="20" alt=""> [eai04191/resonite-api-spec](https://github.com/eai04191/resonite-api-spec) | 1 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/72549676?s=40&v=4" width="20" height="20" alt=""> [duynghiadev/Learn-Code-Youtube](https://github.com/duynghiadev/Learn-Code-Youtube) | 1 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/147974933?s=40&v=4" width="20" height="20" alt=""> [ByteCrumb/Umbraco.Community.DeliveryApiExtensions](https://github.com/ByteCrumb/Umbraco.Community.DeliveryApiExtensions) | 1 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/11848947?s=40&v=4" width="20" height="20" alt=""> [navikt/sosialhjelp-innsyn](https://github.com/navikt/sosialhjelp-innsyn) | 1 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/66737098?s=40&v=4" width="20" height="20" alt=""> [Moaaz-Adel/automation-exercise-cypress](https://github.com/Moaaz-Adel/automation-exercise-cypress) | 1 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/51821168?s=40&v=4" width="20" height="20" alt=""> [EugeniBykovski/blocker-host-client](https://github.com/EugeniBykovski/blocker-host-client) | 1 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/43646293?s=40&v=4" width="20" height="20" alt=""> [fsf-silva-ferreira/salesforce-practice](https://github.com/fsf-silva-ferreira/salesforce-practice) | 1 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/103621682?s=40&v=4" width="20" height="20" alt=""> [beingofexistence13/mediaflow](https://github.com/beingofexistence13/mediaflow) | 1 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/107065006?s=40&v=4" width="20" height="20" alt=""> [SmartBear-DevRel/webinar-security-by-design](https://github.com/SmartBear-DevRel/webinar-security-by-design) | 1 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/110004525?s=40&v=4" width="20" height="20" alt=""> [stac-api-extensions/filter](https://github.com/stac-api-extensions/filter) | 1 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/4002063?s=40&v=4" width="20" height="20" alt=""> [flussonic/openapi-demo](https://github.com/flussonic/openapi-demo) | 1 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/115714?s=40&v=4" width="20" height="20" alt=""> [jamalsoueidan/booking-api](https://github.com/jamalsoueidan/booking-api) | 1 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/105353241?s=40&v=4" width="20" height="20" alt=""> [govuk-one-login/account-interventions-service](https://github.com/govuk-one-login/account-interventions-service) | 1 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/305994?s=40&v=4" width="20" height="20" alt=""> [Vizzuality/cms-scaffold](https://github.com/Vizzuality/cms-scaffold) | 1 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/135602494?s=40&v=4" width="20" height="20" alt=""> [365614269/CNCF-Incubating](https://github.com/365614269/CNCF-Incubating) | 1 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/92167981?s=40&v=4" width="20" height="20" alt=""> [twynb/AudioStreamSplitting](https://github.com/twynb/AudioStreamSplitting) | 1 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/12011396?s=40&v=4" width="20" height="20" alt=""> [mgansler/plusone](https://github.com/mgansler/plusone) | 1 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/141517874?s=40&v=4" width="20" height="20" alt=""> [braze-community/braze-specification](https://github.com/braze-community/braze-specification) | 1 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/34739001?s=40&v=4" width="20" height="20" alt=""> [VNG-Realisatie/Haal-Centraal-BRK-event-sourcing](https://github.com/VNG-Realisatie/Haal-Centraal-BRK-event-sourcing) | 1 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/80308335?s=40&v=4" width="20" height="20" alt=""> [puni9869/gitea](https://github.com/puni9869/gitea) | 1 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/3968818?s=40&v=4" width="20" height="20" alt=""> [jdschleicher/demo-dreamhouse-lwc-shift-left](https://github.com/jdschleicher/demo-dreamhouse-lwc-shift-left) | 1 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/16046346?s=40&v=4" width="20" height="20" alt=""> [mydeveloperday/npm-audit-sarif](https://github.com/mydeveloperday/npm-audit-sarif) | 1 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/515798?s=40&v=4" width="20" height="20" alt=""> [jasonsjones/lwr-sandbox](https://github.com/jasonsjones/lwr-sandbox) | 1 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/4104038?s=40&v=4" width="20" height="20" alt=""> [swfz/git-hooks](https://github.com/swfz/git-hooks) | 1 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/5034428?s=40&v=4" width="20" height="20" alt=""> [cvent/spectral-bug-example](https://github.com/cvent/spectral-bug-example) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/115512992?s=40&v=4" width="20" height="20" alt=""> [encypher-studio/newsware_clients_documentation](https://github.com/encypher-studio/newsware_clients_documentation) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/39690337?s=40&v=4" width="20" height="20" alt=""> [akshaychavan7/Covey.town](https://github.com/akshaychavan7/Covey.town) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/49709011?s=40&v=4" width="20" height="20" alt=""> [sanjana2296/TicTacToe](https://github.com/sanjana2296/TicTacToe) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/8988069?s=40&v=4" width="20" height="20" alt=""> [VladCherniavsky/Health-and-Activity-Recommender](https://github.com/VladCherniavsky/Health-and-Activity-Recommender) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/17980777?s=40&v=4" width="20" height="20" alt=""> [abhayruby1019/backS](https://github.com/abhayruby1019/backS) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/91193945?s=40&v=4" width="20" height="20" alt=""> [DmitriyBrewer/gitea-clone](https://github.com/DmitriyBrewer/gitea-clone) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/91193945?s=40&v=4" width="20" height="20" alt=""> [DmitriyBrewer/test-clgit](https://github.com/DmitriyBrewer/test-clgit) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/10308834?s=40&v=4" width="20" height="20" alt=""> [InTheCloudDan/backstage-testing](https://github.com/InTheCloudDan/backstage-testing) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/14977254?s=40&v=4" width="20" height="20" alt=""> [ndelucca/gitea](https://github.com/ndelucca/gitea) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/116756925?s=40&v=4" width="20" height="20" alt=""> [kulp006/backstage](https://github.com/kulp006/backstage) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/27212526?s=40&v=4" width="20" height="20" alt=""> [echoix/npm-groovy-lint](https://github.com/echoix/npm-groovy-lint) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/151711091?s=40&v=4" width="20" height="20" alt=""> [VerdanTech/VerdanTech-Frontend](https://github.com/VerdanTech/VerdanTech-Frontend) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/94403429?s=40&v=4" width="20" height="20" alt=""> [DavidZbarsky-at/nodejs-repro](https://github.com/DavidZbarsky-at/nodejs-repro) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/152432697?s=40&v=4" width="20" height="20" alt=""> [aryalweb/backstage1](https://github.com/aryalweb/backstage1) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/145787915?s=40&v=4" width="20" height="20" alt=""> [lishogi-org/api](https://github.com/lishogi-org/api) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/61544643?s=40&v=4" width="20" height="20" alt=""> [VisioLab/cash-register-api](https://github.com/VisioLab/cash-register-api) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/6707120?s=40&v=4" width="20" height="20" alt=""> [generics/fake-news](https://github.com/generics/fake-news) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/25025870?s=40&v=4" width="20" height="20" alt=""> [RadioAktywne/website](https://github.com/RadioAktywne/website) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/142798761?s=40&v=4" width="20" height="20" alt=""> [WebWorkTruck/wt-panel-frontend](https://github.com/WebWorkTruck/wt-panel-frontend) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/748043?s=40&v=4" width="20" height="20" alt=""> [pavelkornev/spectral-example](https://github.com/pavelkornev/spectral-example) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/31616278?s=40&v=4" width="20" height="20" alt=""> [dyolfan/trading-journal-app](https://github.com/dyolfan/trading-journal-app) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/118751532?s=40&v=4" width="20" height="20" alt=""> [BRP-API/Haal-Centraal-BRP-Update-API](https://github.com/BRP-API/Haal-Centraal-BRP-Update-API) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/34852428?s=40&v=4" width="20" height="20" alt=""> [mnabeel786/Salesforce-POS](https://github.com/mnabeel786/Salesforce-POS) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/2119212?s=40&v=4" width="20" height="20" alt=""> [jsoref/forgejo-forgejo](https://github.com/jsoref/forgejo-forgejo) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/148347005?s=40&v=4" width="20" height="20" alt=""> [Niko-Danilov/Kemb](https://github.com/Niko-Danilov/Kemb) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/149656619?s=40&v=4" width="20" height="20" alt=""> [vivek-tv-test/sample_sf](https://github.com/vivek-tv-test/sample_sf) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/63062491?s=40&v=4" width="20" height="20" alt=""> [dedaMazai/browseExtension](https://github.com/dedaMazai/browseExtension) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/515798?s=40&v=4" width="20" height="20" alt=""> [jasonsjones/lwr-project](https://github.com/jasonsjones/lwr-project) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/150183500?s=40&v=4" width="20" height="20" alt=""> [industrial-demon/nx-monorepo](https://github.com/industrial-demon/nx-monorepo) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/117523783?s=40&v=4" width="20" height="20" alt=""> [dozjul/gitea](https://github.com/dozjul/gitea) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/94403429?s=40&v=4" width="20" height="20" alt=""> [DavidZbarsky-at/repo-mapping-manifest-repro](https://github.com/DavidZbarsky-at/repo-mapping-manifest-repro) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/115714?s=40&v=4" width="20" height="20" alt=""> [jamalsoueidan/booking-store](https://github.com/jamalsoueidan/booking-store) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/98965800?s=40&v=4" width="20" height="20" alt=""> [neu-cs4530/fall23-team-project-group-706](https://github.com/neu-cs4530/fall23-team-project-group-706) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/120774884?s=40&v=4" width="20" height="20" alt=""> [k2662/forgejo](https://github.com/k2662/forgejo) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/27331430?s=40&v=4" width="20" height="20" alt=""> [ueki-tomohiro/storybook-visual-regression-test](https://github.com/ueki-tomohiro/storybook-visual-regression-test) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/64195573?s=40&v=4" width="20" height="20" alt=""> [uncleaar/extension](https://github.com/uncleaar/extension) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/84503199?s=40&v=4" width="20" height="20" alt=""> [Husan-Negmatullaev/block-list-extension](https://github.com/Husan-Negmatullaev/block-list-extension) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/132867264?s=40&v=4" width="20" height="20" alt=""> [GuruDevCoder/ThinkEasy.cz_Test1](https://github.com/GuruDevCoder/ThinkEasy.cz_Test1) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/143624824?s=40&v=4" width="20" height="20" alt=""> [janus-api-idp/spectral-image](https://github.com/janus-api-idp/spectral-image) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/119620887?s=40&v=4" width="20" height="20" alt=""> [3str-webdev/web-block-service-extension](https://github.com/3str-webdev/web-block-service-extension) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/81639108?s=40&v=4" width="20" height="20" alt=""> [Djiypyk/block_plugin](https://github.com/Djiypyk/block_plugin) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/40384330?s=40&v=4" width="20" height="20" alt=""> [bbusljeta/tanstack-query-demo](https://github.com/bbusljeta/tanstack-query-demo) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/130451310?s=40&v=4" width="20" height="20" alt=""> [digitalimplementer/chrome-ext-Blocker](https://github.com/digitalimplementer/chrome-ext-Blocker) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/146637994?s=40&v=4" width="20" height="20" alt=""> [NatureSL/test-vite-react-extension](https://github.com/NatureSL/test-vite-react-extension) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/53864647?s=40&v=4" width="20" height="20" alt=""> [Lyshka/extension-block](https://github.com/Lyshka/extension-block) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/3989833?s=40&v=4" width="20" height="20" alt=""> [cibulka/thinkeasy](https://github.com/cibulka/thinkeasy) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/87028196?s=40&v=4" width="20" height="20" alt=""> [AisultanBaltabayev/chrom-extension-block-list](https://github.com/AisultanBaltabayev/chrom-extension-block-list) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/55161419?s=40&v=4" width="20" height="20" alt=""> [Denis-cyber/block-list](https://github.com/Denis-cyber/block-list) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/1885938?s=40&v=4" width="20" height="20" alt=""> [sarvex/unleash](https://github.com/sarvex/unleash) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/74633162?s=40&v=4" width="20" height="20" alt=""> [ratiomark/block-list](https://github.com/ratiomark/block-list) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/11643466?s=40&v=4" width="20" height="20" alt=""> [MrFus10n/benny-test](https://github.com/MrFus10n/benny-test) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/30013519?s=40&v=4" width="20" height="20" alt=""> [bert-bae/adventurebot](https://github.com/bert-bae/adventurebot) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/13562?s=40&v=4" width="20" height="20" alt=""> [jauderho/gitea](https://github.com/jauderho/gitea) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/55224802?s=40&v=4" width="20" height="20" alt=""> [Spandana-dara/Covey-Town](https://github.com/Spandana-dara/Covey-Town) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/32938734?s=40&v=4" width="20" height="20" alt=""> [nokken65/gifmu](https://github.com/nokken65/gifmu) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/41439772?s=40&v=4" width="20" height="20" alt=""> [fyargat/countries_client](https://github.com/fyargat/countries_client) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/146637994?s=40&v=4" width="20" height="20" alt=""> [NatureSL/test-nextjs-client](https://github.com/NatureSL/test-nextjs-client) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/100826273?s=40&v=4" width="20" height="20" alt=""> [ARustamA/browser_block_extention](https://github.com/ARustamA/browser_block_extention) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/112655206?s=40&v=4" width="20" height="20" alt=""> [cLubber1337/next-fsd](https://github.com/cLubber1337/next-fsd) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/72332502?s=40&v=4" width="20" height="20" alt=""> [youliangdao/async-values-form](https://github.com/youliangdao/async-values-form) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/81351385?s=40&v=4" width="20" height="20" alt=""> [Vadim2308/EasyBlockExtension](https://github.com/Vadim2308/EasyBlockExtension) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/305994?s=40&v=4" width="20" height="20" alt=""> [Vizzuality/ccsa](https://github.com/Vizzuality/ccsa) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/63515388?s=40&v=4" width="20" height="20" alt=""> [nachmz42/what-is-that-fruit-front](https://github.com/nachmz42/what-is-that-fruit-front) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/19588613?s=40&v=4" width="20" height="20" alt=""> [morellodev/openapi-demo](https://github.com/morellodev/openapi-demo) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/30013519?s=40&v=4" width="20" height="20" alt=""> [bert-bae/haiku-weather](https://github.com/bert-bae/haiku-weather) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/33256364?s=40&v=4" width="20" height="20" alt=""> [andmoredev/aws-community-day-mx](https://github.com/andmoredev/aws-community-day-mx) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/138258895?s=40&v=4" width="20" height="20" alt=""> [brekys/website-blocker-extension](https://github.com/brekys/website-blocker-extension) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/93438959?s=40&v=4" width="20" height="20" alt=""> [MaDKnighT404/stop-list-extension](https://github.com/MaDKnighT404/stop-list-extension) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/126679894?s=40&v=4" width="20" height="20" alt=""> [RuslanBely/client-block-extension](https://github.com/RuslanBely/client-block-extension) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/138258895?s=40&v=4" width="20" height="20" alt=""> [brekys/website-blocker-client](https://github.com/brekys/website-blocker-client) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/33424891?s=40&v=4" width="20" height="20" alt=""> [tranduybau/df-final-project](https://github.com/tranduybau/df-final-project) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/105203498?s=40&v=4" width="20" height="20" alt=""> [iqb-vocabs/validate-md-profile](https://github.com/iqb-vocabs/validate-md-profile) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/76632047?s=40&v=4" width="20" height="20" alt=""> [Breazzz/block-extension](https://github.com/Breazzz/block-extension) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/11957056?s=40&v=4" width="20" height="20" alt=""> [tienan92it/bookstore-demo](https://github.com/tienan92it/bookstore-demo) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/55595657?s=40&v=4" width="20" height="20" alt=""> [felipe-bergamaschi/gluk](https://github.com/felipe-bergamaschi/gluk) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/90105609?s=40&v=4" width="20" height="20" alt=""> [extroblade/block-websites](https://github.com/extroblade/block-websites) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/26869737?s=40&v=4" width="20" height="20" alt=""> [fralomb/.dotfiles](https://github.com/fralomb/.dotfiles) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/116836781?s=40&v=4" width="20" height="20" alt=""> [DezengKong/Software-Development-ip2](https://github.com/DezengKong/Software-Development-ip2) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/116589019?s=40&v=4" width="20" height="20" alt=""> [yoolinkaa/Flower](https://github.com/yoolinkaa/Flower) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/17957079?s=40&v=4" width="20" height="20" alt=""> [allenYetu211/oin](https://github.com/allenYetu211/oin) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/14936646?s=40&v=4" width="20" height="20" alt=""> [dipsaus9/framboos-2023](https://github.com/dipsaus9/framboos-2023) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/21155711?s=40&v=4" width="20" height="20" alt=""> [ctrlx-altf4/career-climb](https://github.com/ctrlx-altf4/career-climb) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/61095272?s=40&v=4" width="20" height="20" alt=""> [likuny0415/activity10](https://github.com/likuny0415/activity10) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/305994?s=40&v=4" width="20" height="20" alt=""> [Vizzuality/ncs-prototyping-network](https://github.com/Vizzuality/ncs-prototyping-network) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/85643503?s=40&v=4" width="20" height="20" alt=""> [mikekistler/contoso-fiber](https://github.com/mikekistler/contoso-fiber) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/110004525?s=40&v=4" width="20" height="20" alt=""> [stac-api-extensions/query](https://github.com/stac-api-extensions/query) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/72553910?s=40&v=4" width="20" height="20" alt=""> [ws-4020/mobile-app-crib-notes](https://github.com/ws-4020/mobile-app-crib-notes) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/17925974?s=40&v=4" width="20" height="20" alt=""> [roboticsoutreach/pyinv-next-ui](https://github.com/roboticsoutreach/pyinv-next-ui) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/110004525?s=40&v=4" width="20" height="20" alt=""> [stac-api-extensions/sort](https://github.com/stac-api-extensions/sort) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/8598274?s=40&v=4" width="20" height="20" alt=""> [surdarmaputra/world-clock](https://github.com/surdarmaputra/world-clock) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/109667025?s=40&v=4" width="20" height="20" alt=""> [phonghpml/my-project](https://github.com/phonghpml/my-project) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/11340779?s=40&v=4" width="20" height="20" alt=""> [aboe026/release-node-project](https://github.com/aboe026/release-node-project) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/143520250?s=40&v=4" width="20" height="20" alt=""> [Orcasa-Platform/orcasa](https://github.com/Orcasa-Platform/orcasa) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/16175070?s=40&v=4" width="20" height="20" alt=""> [cplprince/kingdoms](https://github.com/cplprince/kingdoms) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/5961?s=40&v=4" width="20" height="20" alt=""> [devraj/debug-remixv2-rvf](https://github.com/devraj/debug-remixv2-rvf) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/55595657?s=40&v=4" width="20" height="20" alt=""> [felipe-bergamaschi/elofy](https://github.com/felipe-bergamaschi/elofy) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/6601424?s=40&v=4" width="20" height="20" alt=""> [unfoldingWord/dcs](https://github.com/unfoldingWord/dcs) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/305994?s=40&v=4" width="20" height="20" alt=""> [Vizzuality/tnc-human-rights-tool](https://github.com/Vizzuality/tnc-human-rights-tool) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/83460139?s=40&v=4" width="20" height="20" alt=""> [boost-entropy-golang/gitea](https://github.com/boost-entropy-golang/gitea) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/117478405?s=40&v=4" width="20" height="20" alt=""> [wieczorekkevin/CS490-Directory](https://github.com/wieczorekkevin/CS490-Directory) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/76161333?s=40&v=4" width="20" height="20" alt=""> [mesmerlord/freeheat_test](https://github.com/mesmerlord/freeheat_test) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/61095272?s=40&v=4" width="20" height="20" alt=""> [likuny0415/activity4](https://github.com/likuny0415/activity4) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/37034805?s=40&v=4" width="20" height="20" alt=""> [harryzcy/gitea](https://github.com/harryzcy/gitea) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/12677991?s=40&v=4" width="20" height="20" alt=""> [paveg/valos](https://github.com/paveg/valos) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/61180606?s=40&v=4" width="20" height="20" alt=""> [wULLSnpAXbWZGYDYyhWTKKspEQoaYxXyhoisqHf/gitea](https://github.com/wULLSnpAXbWZGYDYyhWTKKspEQoaYxXyhoisqHf/gitea) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/11775989?s=40&v=4" width="20" height="20" alt=""> [KrisKnez/easy-notes-frontend](https://github.com/KrisKnez/easy-notes-frontend) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/33474625?s=40&v=4" width="20" height="20" alt=""> [TNorsang/TicTacToeLogic](https://github.com/TNorsang/TicTacToeLogic) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/144650132?s=40&v=4" width="20" height="20" alt=""> [Movie-Mingle/Movie-mingle-client](https://github.com/Movie-Mingle/Movie-mingle-client) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/5269670?s=40&v=4" width="20" height="20" alt=""> [naresh699/shoe-app](https://github.com/naresh699/shoe-app) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/58741970?s=40&v=4" width="20" height="20" alt=""> [jmratel/ebikes-demo-brp](https://github.com/jmratel/ebikes-demo-brp) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/142521915?s=40&v=4" width="20" height="20" alt=""> [kswatt22/EbikeDX](https://github.com/kswatt22/EbikeDX) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/28817792?s=40&v=4" width="20" height="20" alt=""> [marcilenne/LWCBasics](https://github.com/marcilenne/LWCBasics) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/37669232?s=40&v=4" width="20" height="20" alt=""> [sravanthiNetha/ebikes](https://github.com/sravanthiNetha/ebikes) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/29931455?s=40&v=4" width="20" height="20" alt=""> [kumod1990/LWC](https://github.com/kumod1990/LWC) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/11340779?s=40&v=4" width="20" height="20" alt=""> [aboe026/node-update-dependencies](https://github.com/aboe026/node-update-dependencies) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/134859872?s=40&v=4" width="20" height="20" alt=""> [a-chandusfdc/SFDCPlayground](https://github.com/a-chandusfdc/SFDCPlayground) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/16046346?s=40&v=4" width="20" height="20" alt=""> [mydeveloperday/spectral-sarif](https://github.com/mydeveloperday/spectral-sarif) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/85440803?s=40&v=4" width="20" height="20" alt=""> [Sidatii/ebikes-lwc](https://github.com/Sidatii/ebikes-lwc) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/105389536?s=40&v=4" width="20" height="20" alt=""> [katalon-labs/katalon-chrome-recorder](https://github.com/katalon-labs/katalon-chrome-recorder) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/39841583?s=40&v=4" width="20" height="20" alt=""> [mashafrancis/sa-jenkins](https://github.com/mashafrancis/sa-jenkins) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/110598114?s=40&v=4" width="20" height="20" alt=""> [schnitz-air/innocent-repo](https://github.com/schnitz-air/innocent-repo) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/105389536?s=40&v=4" width="20" height="20" alt=""> [katalon-labs/katalon-recorder-extension](https://github.com/katalon-labs/katalon-recorder-extension) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/19714?s=40&v=4" width="20" height="20" alt=""> [azu/secretlint-sarif](https://github.com/azu/secretlint-sarif) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/1532352?s=40&v=4" width="20" height="20" alt=""> [k-hal/secretlint](https://github.com/k-hal/secretlint) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/11340779?s=40&v=4" width="20" height="20" alt=""> [aboe026/data-structures](https://github.com/aboe026/data-structures) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/11340779?s=40&v=4" width="20" height="20" alt=""> [aboe026/shields.io-badge-results](https://github.com/aboe026/shields.io-badge-results) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/95175571?s=40&v=4" width="20" height="20" alt=""> [NOUIY/npm-groovy-lint](https://github.com/NOUIY/npm-groovy-lint) | 0 |
 
 _Generated using [github-dependents-info](https://github.com/nvuillam/github-dependents-info), by [Nicolas Vuillamy](https://github.com/nvuillam)_
