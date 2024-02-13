@@ -4,10 +4,10 @@
     "target": "es2017",
     "declaration": true,
     "rootDir": "./src",
-    "outDir": "./dist",
+    "outDir": "./dist"
   },
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules/**"],
   "types": ["node"],
-  "typeRoots": ["node_modules/@types", "src/types"],
+  "typeRoots": ["node_modules/@types", "src/types"]
 }
