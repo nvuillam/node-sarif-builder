@@ -20,7 +20,7 @@
     "name": "Nicolas Vuillamy",
     "email": "nicolas.vuillamy@gmail.com",
     "url": "http://nicolas.vuillamy.fr"
-  }
+  },
   "scripts": {
     "fix": "run-s fix:*",
     "fix:prettier": "prettier \"src/**/*.ts\" --write",
