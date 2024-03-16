@@ -13,7 +13,7 @@ import { setOptionValues } from './utils';
 export class SarifBuilder {
   // Default run value
   log: Log = {
-    $schema: 'http://json.schemastore.org/sarif-2.1.0-rtm.5.json',
+    $schema: 'http://json.schemastore.org/sarif-2.1.0.json',
     version: '2.1.0',
     runs: [],
   };
