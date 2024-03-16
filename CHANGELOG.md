@@ -2,6 +2,11 @@
 
 ## UNRELEASED
 
+## [3.1.0] 2024-16-03
+
+- Update schema to final 2.1.0 release (but the schema definition remains the same)
+  - New value:  `$schema: 'http://json.schemastore.org/sarif-2.1.0.json'`
+  - Previous value: `$schema: 'http://json.schemastore.org/sarif-2.1.0-rtm.5.json'`
 - Add github-dependents-info workflow
 
 ## [3.0.0] 2023-11-26
