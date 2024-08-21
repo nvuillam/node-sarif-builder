@@ -1,6 +1,11 @@
 # Changelog
 
-## UNRELEASED
+## Beta
+
+## [3.2.0] 2024-08-22
+
+- Upgrade npm dependencies
+- Upgrade MegaLinter to v8
 
 ## [3.1.0] 2024-16-03
 
