@@ -127,7 +127,7 @@ test('Create SarifResultBuilder with error', (t) => {
     createInitSarifWrongResultBuilder();
   } catch (e) {
     error = true;
-    console.log("Error: " + e.message);
+    console.log('Error: ' + e.message);
   }
   t.assert(error === true, 'Error should have been triggered');
 });
