@@ -28,3 +28,4 @@ REPOSITORY_TRIVY_ARGUMENTS:
   - --skip-dirs
   - ./node_modules/uri-js
 TYPESCRIPT_DEFAULT_STYLE: prettier
+FILTER_REGEX_EXCLUDE: (github-dependents-info\.md)
