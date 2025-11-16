@@ -29,6 +29,7 @@ jobs:
       contents: write
       issues: write
       pull-requests: write
+      workflows: write
     steps:
       # Git Checkout
       - name: Checkout Code
