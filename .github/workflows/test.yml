@@ -7,7 +7,7 @@
 #######################################
 # Start the job on all push to master #
 #######################################
-name: "Test"
+name: 'Test'
 on:
   push: # Comment this line to trigger action only on pull-requests (not recommended if you don't pay for GH Actions)
   pull_request:
@@ -27,9 +27,9 @@ jobs:
       # Setup .npmrc file to publish to npm
       - uses: actions/setup-node@v6
         with:
-          node-version: "24.x"
-          registry-url: "https://registry.npmjs.org"
+          node-version: '24.x'
+          registry-url: 'https://registry.npmjs.org'
           # Defaults to the user or organization that owns the workflow file
-          scope: "nvuillam"
+          scope: 'nvuillam'
       - run: yarn
       - run: yarn test
