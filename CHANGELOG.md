@@ -2,8 +2,12 @@
 
 ## Beta
 
+## [3.3.0] 2025-11-16
+
 - Upgrade NodeJs minimum version to Node 20
-- Fix yarn dependencies warnings
+- Upgrade NPM dependencies
+- Upgrade Github Actions workflows dependencies
+- Upgrade MegaLinter to v9
 
 ## [3.2.0] 2024-08-22
 
