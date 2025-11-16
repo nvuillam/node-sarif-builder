@@ -2,7 +2,7 @@
 
 ## Beta
 
-- Upgrade NodeJs minimum version to Node 22
+- Upgrade NodeJs minimum version to Node 20
 - Fix yarn dependencies warnings
 
 ## [3.2.0] 2024-08-22
