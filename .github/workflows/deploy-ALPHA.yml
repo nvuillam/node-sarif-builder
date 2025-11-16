@@ -24,11 +24,11 @@ jobs:
     name: Build & Deploy alpha
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       # Setup .npmrc file to publish to npm
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
-          node-version: '18.x'
+          node-version: '24.x'
           registry-url: 'https://registry.npmjs.org'
           always-auth: true
           # Defaults to the user or organization that owns the workflow file
