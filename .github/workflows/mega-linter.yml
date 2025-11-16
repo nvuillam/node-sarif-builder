@@ -1,6 +1,6 @@
 ---
 # MegaLinter GitHub Action configuration file
-# More info at https://oxsecurity.github.io/megalinter
+# More info at https://megalinter.io
 name: MegaLinter
 
 on:
@@ -32,7 +32,7 @@ jobs:
     steps:
       # Git Checkout
       - name: Checkout Code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           token: ${{ secrets.PAT || secrets.GITHUB_TOKEN }}
           fetch-depth: 0
@@ -56,6 +56,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: MegaLinter reports
+          include-hidden-files: 'true'
           path: |
             megalinter-reports
             mega-linter.log

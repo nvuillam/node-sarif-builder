@@ -7,11 +7,11 @@
 #######################################
 # Start the job on all push to master #
 #######################################
-name: "Build & Deploy - Beta"
+name: 'Build & Deploy - Beta'
 on:
   push:
     branches:
-      - "main"
+      - 'main'
 
 permissions: read-all
 
@@ -23,15 +23,15 @@ jobs:
     name: Deploy beta
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       # Setup .npmrc file to publish to npm
       - uses: actions/setup-node@v6
         with:
-          node-version: "22.x"
-          registry-url: "https://registry.npmjs.org"
+          node-version: '24.x'
+          registry-url: 'https://registry.npmjs.org'
           always-auth: true
           # Defaults to the user or organization that owns the workflow file
-          scope: "nvuillam"
+          scope: 'nvuillam'
       - run: yarn
       - run: yarn config set version-git-tag false
       - run: BETAID=$(date '+%Y%m%d%H%M') && yarn version --prepatch --preid="beta$BETAID"
