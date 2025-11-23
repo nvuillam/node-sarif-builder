@@ -2,6 +2,10 @@
 
 ## Beta
 
+## [3.3.1] 2025-11-23
+
+- Upgrade NPM dependencies
+
 ## [3.3.0] 2025-11-16
 
 - Upgrade NodeJs minimum version to Node 20
