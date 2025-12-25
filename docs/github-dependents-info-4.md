@@ -177,6 +177,7 @@
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/3968818?s=40&v=4" width="20" height="20" alt="">  &nbsp; [jdschleicher](https://github.com/jdschleicher) / [demo-dreamhouse-lwc-shift-left](https://github.com/jdschleicher/demo-dreamhouse-lwc-shift-left) | 1 |
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/515798?s=40&v=4" width="20" height="20" alt="">  &nbsp; [jasonsjones](https://github.com/jasonsjones) / [lwr-sandbox](https://github.com/jasonsjones/lwr-sandbox) | 1 |
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/11340779?s=40&v=4" width="20" height="20" alt="">  &nbsp; [aboe026](https://github.com/aboe026) / [shields.io-badge-results](https://github.com/aboe026/shields.io-badge-results) | 1 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/211179375?s=40&v=4" width="20" height="20" alt="">  &nbsp; [darbotlabs](https://github.com/darbotlabs) / [genaid](https://github.com/darbotlabs/genaid) | 0 |
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/25872250?s=40&v=4" width="20" height="20" alt="">  &nbsp; [jim-hill-r](https://github.com/jim-hill-r) / [monorepo](https://github.com/jim-hill-r/monorepo) | 0 |
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/249056095?s=40&v=4" width="20" height="20" alt="">  &nbsp; [Replicant-Partners](https://github.com/Replicant-Partners) / [robotdev-robotcode](https://github.com/Replicant-Partners/robotdev-robotcode) | 0 |
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/12213477?s=40&v=4" width="20" height="20" alt="">  &nbsp; [theNestruo](https://github.com/theNestruo) / [vscode](https://github.com/theNestruo/vscode) | 0 |
@@ -503,7 +504,6 @@
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/233981842?s=40&v=4" width="20" height="20" alt="">  &nbsp; [codyyyyyyy96](https://github.com/codyyyyyyy96) / [gemini-cli](https://github.com/codyyyyyyy96/gemini-cli) | 0 |
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/51494936?s=40&v=4" width="20" height="20" alt="">  &nbsp; [richardpark-msft](https://github.com/richardpark-msft) / [azure-sdk-tools](https://github.com/richardpark-msft/azure-sdk-tools) | 0 |
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/239545694?s=40&v=4" width="20" height="20" alt="">  &nbsp; [ast-pub-fiber-flask](https://github.com/ast-pub-fiber-flask) / [heilingbrunner_vscode-tiaportal-mcp_9723](https://github.com/ast-pub-fiber-flask/heilingbrunner_vscode-tiaportal-mcp_9723) | 0 |
-|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/161849262?s=40&v=4" width="20" height="20" alt="">  &nbsp; [polarity-lang](https://github.com/polarity-lang) / [vscode](https://github.com/polarity-lang/vscode) | 0 |
 
 <div align="center"><a href="github-dependents-info-3.md">⬅️ Previous</a> | <span>Page 4 of 7</span> | <a href="github-dependents-info-5.md">Next ➡️</a></div>
 
