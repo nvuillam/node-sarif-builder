@@ -4,6 +4,7 @@
 
 | Repository | Stars  |
 | :--------  | -----: |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/118864818?s=40&v=4" width="20" height="20" alt="">  &nbsp; [AriMaran](https://github.com/AriMaran) / [site-curriculo](https://github.com/AriMaran/site-curriculo) | 0 |
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/138744027?s=40&v=4" width="20" height="20" alt="">  &nbsp; [shizuoka-yy-lab-armkn](https://github.com/shizuoka-yy-lab-armkn) / [FIELDS-public](https://github.com/shizuoka-yy-lab-armkn/FIELDS-public) | 0 |
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/101716204?s=40&v=4" width="20" height="20" alt="">  &nbsp; [spietrek-insight](https://github.com/spietrek-insight) / [react-vite-ts](https://github.com/spietrek-insight/react-vite-ts) | 0 |
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/98305285?s=40&v=4" width="20" height="20" alt="">  &nbsp; [shishir1604](https://github.com/shishir1604) / [cs455_ass1](https://github.com/shishir1604/cs455_ass1) | 0 |

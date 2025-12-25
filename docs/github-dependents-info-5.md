@@ -4,6 +4,7 @@
 
 | Repository | Stars  |
 | :--------  | -----: |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/161849262?s=40&v=4" width="20" height="20" alt="">  &nbsp; [polarity-lang](https://github.com/polarity-lang) / [vscode](https://github.com/polarity-lang/vscode) | 0 |
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/119737658?s=40&v=4" width="20" height="20" alt="">  &nbsp; [anonim-01](https://github.com/anonim-01) / [forem-docs](https://github.com/anonim-01/forem-docs) | 0 |
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/11428655?s=40&v=4" width="20" height="20" alt="">  &nbsp; [marcoieni](https://github.com/marcoieni) / [rust](https://github.com/marcoieni/rust) | 0 |
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/12927717?s=40&v=4" width="20" height="20" alt="">  &nbsp; [jamsch](https://github.com/jamsch) / [react-mockups-vscode](https://github.com/jamsch/react-mockups-vscode) | 0 |
@@ -503,7 +504,6 @@
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/81629304?s=40&v=4" width="20" height="20" alt="">  &nbsp; [johnperez416](https://github.com/johnperez416) / [website](https://github.com/johnperez416/website) | 0 |
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/181206619?s=40&v=4" width="20" height="20" alt="">  &nbsp; [Unicorn-Forest](https://github.com/Unicorn-Forest) / [echode](https://github.com/Unicorn-Forest/echode) | 0 |
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/181206619?s=40&v=4" width="20" height="20" alt="">  &nbsp; [Unicorn-Forest](https://github.com/Unicorn-Forest) / [cline](https://github.com/Unicorn-Forest/cline) | 0 |
-|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/146369620?s=40&v=4" width="20" height="20" alt="">  &nbsp; [Dareh123](https://github.com/Dareh123) / [vscode-spell-checker](https://github.com/Dareh123/vscode-spell-checker) | 0 |
 
 <div align="center"><a href="github-dependents-info-4.md">⬅️ Previous</a> | <span>Page 5 of 7</span> | <a href="github-dependents-info-6.md">Next ➡️</a></div>
 

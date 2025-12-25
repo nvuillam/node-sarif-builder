@@ -4,6 +4,7 @@
 
 | Repository | Stars  |
 | :--------  | -----: |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/146369620?s=40&v=4" width="20" height="20" alt="">  &nbsp; [Dareh123](https://github.com/Dareh123) / [vscode-spell-checker](https://github.com/Dareh123/vscode-spell-checker) | 0 |
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/146369620?s=40&v=4" width="20" height="20" alt="">  &nbsp; [Dareh123](https://github.com/Dareh123) / [vscode-copilot-chat](https://github.com/Dareh123/vscode-copilot-chat) | 0 |
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/230672585?s=40&v=4" width="20" height="20" alt="">  &nbsp; [tositadanakada](https://github.com/tositadanakada) / [gomi](https://github.com/tositadanakada/gomi) | 0 |
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/11542388?s=40&v=4" width="20" height="20" alt="">  &nbsp; [daumie](https://github.com/daumie) / [ebikes-lwc](https://github.com/daumie/ebikes-lwc) | 0 |
@@ -503,7 +504,6 @@
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/2704275?s=40&v=4" width="20" height="20" alt="">  &nbsp; [licungang](https://github.com/licungang) / [gitea](https://github.com/licungang/gitea) | 0 |
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/145715738?s=40&v=4" width="20" height="20" alt="">  &nbsp; [saashub-it](https://github.com/saashub-it) / [conform-class-validator](https://github.com/saashub-it/conform-class-validator) | 0 |
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/110202169?s=40&v=4" width="20" height="20" alt="">  &nbsp; [Grackey](https://github.com/Grackey) / [module05-design-pattern-activity-weatherstation](https://github.com/Grackey/module05-design-pattern-activity-weatherstation) | 0 |
-|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/118864818?s=40&v=4" width="20" height="20" alt="">  &nbsp; [AriMaran](https://github.com/AriMaran) / [site-curriculo](https://github.com/AriMaran/site-curriculo) | 0 |
 
 <div align="center"><a href="github-dependents-info-5.md">⬅️ Previous</a> | <span>Page 6 of 7</span> | <a href="github-dependents-info-7.md">Next ➡️</a></div>
 
