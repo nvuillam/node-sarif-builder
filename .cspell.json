@@ -9,7 +9,7 @@
     "report"
   ],
   "language": "en",
-  "version": "0.1",
+  "version": "0.2",
   "words": [
     "ABAP",
     "ALPHAID",
@@ -203,6 +203,7 @@
     "nawk",
     "nginxconf",
     "nlogo",
+    "npmignore",
     "npmrc",
     "nproj",
     "numpy",

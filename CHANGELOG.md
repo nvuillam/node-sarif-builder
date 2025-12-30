@@ -6,7 +6,7 @@
 
 - Upgrade NPM dependencies
 - CI: Use NPM trusted publishers for better security
-- Add .npmignore to decreate pakcage size
+- Add .npmignore to decrease package size
 
 ## [3.3.1] 2025-11-23
 
