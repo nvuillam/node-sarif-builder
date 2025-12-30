@@ -2,6 +2,12 @@
 
 ## Beta
 
+## [3.4.0] 2025-12-30
+
+- Upgrade NPM dependencies
+- CI: Use NPM trusted publishers for better security
+- Add .npmignore to decrease package size
+
 ## [3.3.1] 2025-11-23
 
 - Upgrade NPM dependencies

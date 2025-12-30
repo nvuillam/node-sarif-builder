@@ -1,0 +1,95 @@
+---
+#
+# Documentation:
+# https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions
+#
+
+name: Build & Deploy
+
+on:
+  push:
+    branches:
+      - alpha
+      - dev
+      - main
+  release:
+    types: ['created']
+
+permissions:
+  contents: read
+
+jobs:
+  deploy_alpha:
+    name: Build & Deploy alpha
+    runs-on: ubuntu-latest
+    environment: release
+    if: github.event_name == 'push' && (github.ref == 'refs/heads/alpha' || github.ref == 'refs/heads/dev')
+    permissions:
+      contents: read
+      id-token: write # Required for OIDC (npm Trusted Publishers)
+    steps:
+      - uses: actions/checkout@v4
+
+      # Setup .npmrc file to publish to npm
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.x'
+          registry-url: 'https://registry.npmjs.org'
+          always-auth: true
+          # Defaults to the user or organization that owns the workflow file
+          scope: 'nvuillam'
+
+      - run: yarn install --frozen-lockfile
+      - run: yarn config set version-git-tag false
+      - run: ALPHAID=$(date '+%Y%m%d%H%M') && yarn version --prepatch --preid="alpha$ALPHAID"
+      # Use npm publish for OIDC / npm Trusted Publishers
+      - run: npm publish --tag alpha
+
+  deploy_beta:
+    name: Deploy beta
+    runs-on: ubuntu-latest
+    environment: release
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    permissions:
+      contents: read
+      id-token: write # Required for OIDC (npm Trusted Publishers)
+    steps:
+      - uses: actions/checkout@v4
+
+      # Setup .npmrc file to publish to npm
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.x'
+          registry-url: 'https://registry.npmjs.org'
+          always-auth: true
+          # Defaults to the user or organization that owns the workflow file
+          scope: 'nvuillam'
+
+      - run: yarn install --frozen-lockfile
+      - run: yarn config set version-git-tag false
+      - run: BETAID=$(date '+%Y%m%d%H%M') && yarn version --prepatch --preid="beta$BETAID"
+      # Use npm publish for OIDC / npm Trusted Publishers
+      - run: npm publish --tag beta
+
+  deploy_release:
+    name: Deploy release
+    runs-on: ubuntu-latest
+    environment: release
+    if: github.event_name == 'release'
+    permissions:
+      contents: read
+      id-token: write # Required for OIDC (npm Trusted Publishers)
+    steps:
+      - uses: actions/checkout@v4
+
+      # Setup .npmrc file to publish to npm
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.x'
+          registry-url: 'https://registry.npmjs.org'
+          # Defaults to the user or organization that owns the workflow file
+          scope: 'nvuillam'
+
+      - run: yarn install --frozen-lockfile
+      # Use npm publish for OIDC / npm Trusted Publishers
+      - run: npm publish

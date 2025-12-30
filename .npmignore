@@ -1,0 +1,28 @@
+# Keep npm publishes small and deterministic.
+# Note: this repo also uses the "files" whitelist in package.json;
+# .npmignore provides an extra safety net (e.g., if dist starts including maps/tests).
+
+# Repo / tooling
+.github/
+.vscode/
+docs/
+src/
+test/
+diff/
+coverage/
+.nyc_output/
+
+# Logs & temp
+*.log
+*.tmp
+
+# TypeScript / build leftovers
+*.tsbuildinfo
+
+# Never publish source maps (package consumers rarely need them)
+**/*.map
+
+# Never publish tests/specs
+**/*.spec.*
+**/*.test.*
+**/__tests__/
