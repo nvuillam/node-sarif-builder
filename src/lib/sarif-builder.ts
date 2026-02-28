@@ -1,5 +1,3 @@
-import * as path from 'path';
-
 import * as fs from 'fs-extra';
 import { Log, Run } from 'sarif';
 
@@ -60,57 +58,62 @@ export class SarifBuilder {
   completeRunFields(run: Run): Run {
     // Collect all missing artifacts from results
     run.artifacts = run.artifacts || [];
-    for (const result of run.results) {
+    const existingArtifactUris = new Set(
+      run.artifacts.map((a) => a?.location?.uri).filter(Boolean),
+    );
+
+    for (const result of run.results || []) {
       for (const location of result.locations || []) {
-        if (
-          location?.physicalLocation?.artifactLocation?.uri &&
-          run.artifacts.filter(
-            (artifact) =>
-              artifact?.location?.uri ===
-              location.physicalLocation.artifactLocation.uri,
-          ).length === 0
-        ) {
+        const uri = location?.physicalLocation?.artifactLocation?.uri;
+        if (uri && !existingArtifactUris.has(uri)) {
           // Add result to driver artifact only if not existing
-          const ext = path
-            .extname(location.physicalLocation.artifactLocation.uri)
-            .replace('.', '');
+          const lastDot = uri.lastIndexOf('.');
+          const ext = lastDot !== -1 ? uri.slice(lastDot + 1) : '';
           const language = EXTENSIONS_LANGUAGES[ext] || 'unknown';
           run.artifacts.push({
             sourceLanguage: language,
-            location: { uri: location.physicalLocation.artifactLocation.uri },
+            location: { uri },
           });
+          existingArtifactUris.add(uri);
         }
       }
     }
-    // Build artifacts indexes
-    const artifactIndexes = run.artifacts.map((artifact) => {
-      return artifact?.location?.uri;
+
+    // Build artifact index map (uri -> index) for O(1) lookups
+    const artifactIndexMap = new Map<string, number>();
+    run.artifacts.forEach((artifact, index) => {
+      const uri = artifact?.location?.uri;
+      if (uri) {
+        artifactIndexMap.set(uri, index);
+      }
     });
 
-    // Build rules indexes
-    const rulesIndexes = (run?.tool?.driver?.rules || []).map((rule) => {
-      return rule.id;
+    // Build rules index map (id -> index) for O(1) lookups
+    const rulesIndexMap = new Map<string, number>();
+    (run?.tool?.driver?.rules || []).forEach((rule, index) => {
+      rulesIndexMap.set(rule.id, index);
     });
 
     // Update index in results with computed values
-    run.results = run.results.map((result) => {
+    for (const result of run.results || []) {
       // Set rule index in results
-      if (rulesIndexes.indexOf(result.ruleId) > -1) {
-        result.ruleIndex = rulesIndexes.indexOf(result.ruleId);
+      const ruleIndex = rulesIndexMap.get(result.ruleId);
+      if (ruleIndex !== undefined) {
+        result.ruleIndex = ruleIndex;
       }
       // Set artifact index in results
       if (result.locations) {
-        result.locations = result.locations.map((location) => {
+        for (const location of result.locations) {
           const uri = location?.physicalLocation?.artifactLocation?.uri;
-          if (uri && artifactIndexes.indexOf(uri) > -1) {
-            location.physicalLocation.artifactLocation.index =
-              artifactIndexes.indexOf(uri);
+          if (uri) {
+            const artIndex = artifactIndexMap.get(uri);
+            if (artIndex !== undefined) {
+              location.physicalLocation.artifactLocation.index = artIndex;
+            }
           }
-          return location;
-        });
+        }
       }
-      return result;
-    });
+    }
 
     return run;
   }

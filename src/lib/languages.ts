@@ -1,4 +1,4 @@
-export const EXTENSIONS_LANGUAGES = {
+export const EXTENSIONS_LANGUAGES: Record<string, string> = {
   1: 'Groff',
   2: 'Groff',
   3: 'Groff',
@@ -736,8 +736,9 @@ export const EXTENSIONS_LANGUAGES = {
   tu: 'Turing',
   ttl: 'Turtle',
   twig: 'Twig',
-  ts: 'XML',
-  tsx: 'XML',
+  ts: 'TypeScript',
+  tsx: 'TypeScript',
+  // tsx: JSX variant of TypeScript
   upc: 'Unified Parallel C',
   anim: 'Unity3D Asset',
   asset: 'Unity3D Asset',

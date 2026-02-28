@@ -2,6 +2,9 @@
 
 ## Beta
 
+- Refactors SARIF processing for improved performance
+- Upgrade NPM dependencies
+
 ## [3.4.0] 2025-12-30
 
 - Upgrade NPM dependencies
