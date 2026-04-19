@@ -2,6 +2,11 @@
 
 ## Beta
 
+## [4.1.0] 2026-04-19
+
+- Upgrade to Typescript v6
+- Upgrade NPM dependencies
+
 ## [4.0.0] 2026-02-28
 
 - Refactors SARIF processing for improved performance
