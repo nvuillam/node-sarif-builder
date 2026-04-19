@@ -97,9 +97,11 @@ export class SarifBuilder {
     // Update index in results with computed values
     for (const result of run.results || []) {
       // Set rule index in results
-      const ruleIndex = rulesIndexMap.get(result.ruleId);
-      if (ruleIndex !== undefined) {
-        result.ruleIndex = ruleIndex;
+      if (result.ruleId) {
+        const ruleIndex = rulesIndexMap.get(result.ruleId);
+        if (ruleIndex !== undefined) {
+          result.ruleIndex = ruleIndex;
+        }
       }
       // Set artifact index in results
       if (result.locations) {
@@ -108,7 +110,7 @@ export class SarifBuilder {
           if (uri) {
             const artIndex = artifactIndexMap.get(uri);
             if (artIndex !== undefined) {
-              location.physicalLocation.artifactLocation.index = artIndex;
+              location.physicalLocation!.artifactLocation!.index = artIndex;
             }
           }
         }
