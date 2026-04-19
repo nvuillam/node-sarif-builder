@@ -44,7 +44,7 @@ export class SarifRuleBuilder {
   }
 
   setShortDescriptionText(shortDescriptionText: string) {
-    this.rule.shortDescription.text = shortDescriptionText;
+    this.rule.shortDescription!.text = shortDescriptionText;
   }
 
   setFullDescriptionText(fullDescriptionText: string) {

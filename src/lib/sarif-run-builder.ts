@@ -40,11 +40,11 @@ export class SarifRunBuilder {
   }
 
   addRule(sarifRuleBuilder: SarifRuleBuilder) {
-    this.run.tool.driver.rules.push(sarifRuleBuilder.rule);
+    this.run.tool.driver.rules!.push(sarifRuleBuilder.rule);
   }
 
   addResult(sarifResultBuilder: SarifResultBuilder) {
-    this.run.results.push(sarifResultBuilder.result);
+    this.run.results!.push(sarifResultBuilder.result);
   }
 
   setToolDriverName(name: string) {

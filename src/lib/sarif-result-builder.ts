@@ -73,12 +73,12 @@ export class SarifResultBuilder {
 
   setLocationRegion(region: Region) {
     this.manageInitPhysicalLocation();
-    this.result.locations[0].physicalLocation.region = region;
+    this.result.locations![0].physicalLocation!.region = region;
   }
 
   setLocationArtifactUri(artifactLocation: ArtifactLocation) {
     this.manageInitPhysicalLocation();
-    this.result.locations[0].physicalLocation.artifactLocation =
+    this.result.locations![0].physicalLocation!.artifactLocation =
       artifactLocation;
   }
 
@@ -91,9 +91,9 @@ export class SarifResultBuilder {
 
   private manageInitPhysicalLocation() {
     this.manageInitLocation();
-    if (this.result?.locations[0].physicalLocation) {
+    if (this.result.locations![0].physicalLocation) {
       return;
     }
-    this.result.locations[0].physicalLocation = {};
+    this.result.locations![0].physicalLocation = {};
   }
 }

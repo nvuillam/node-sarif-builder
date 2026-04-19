@@ -57,24 +57,25 @@ test('Create SarifResultBuilder and use initSimple', (t) => {
   );
   t.is(sarifResultBuilder.result.ruleId, 'AssignmentInConditional');
   t.is(
-    sarifResultBuilder.result.locations[0].physicalLocation.artifactLocation
+    sarifResultBuilder.result.locations![0].physicalLocation!.artifactLocation!
       .uri,
     'src/urf/wesh.js',
   );
   t.is(
-    sarifResultBuilder.result.locations[0].physicalLocation.region.startLine,
+    sarifResultBuilder.result.locations![0].physicalLocation!.region!.startLine,
     8,
   );
   t.is(
-    sarifResultBuilder.result.locations[0].physicalLocation.region.startColumn,
+    sarifResultBuilder.result.locations![0].physicalLocation!.region!
+      .startColumn,
     1,
   );
   t.is(
-    sarifResultBuilder.result.locations[0].physicalLocation.region.endLine,
+    sarifResultBuilder.result.locations![0].physicalLocation!.region!.endLine,
     8,
   );
   t.is(
-    sarifResultBuilder.result.locations[0].physicalLocation.region.endColumn,
+    sarifResultBuilder.result.locations![0].physicalLocation!.region!.endColumn,
     1,
   );
 });
@@ -99,23 +100,23 @@ test('Create SarifResultBuilder and generate file', (t) => {
     'No runs found in generated SARIF log',
   );
   t.assert(
-    outputSarifObj?.runs[0].tool?.driver?.rules?.length > 1,
+    (outputSarifObj?.runs[0].tool?.driver?.rules?.length ?? 0) > 1,
     'No rules found in generated SARIF log',
   );
   t.assert(
-    outputSarifObj?.runs[0].artifacts.length > 0,
+    (outputSarifObj?.runs[0].artifacts?.length ?? 0) > 0,
     'No artifacts found in generated SARIF log',
   );
   t.assert(
-    outputSarifObj?.runs[0].results?.length > 1,
+    (outputSarifObj?.runs[0].results?.length ?? 0) > 1,
     'No results found in generated SARIF log',
   );
   t.assert(
-    outputSarifObj?.runs[0].results[0].ruleIndex !== null,
+    outputSarifObj?.runs[0].results?.[0].ruleIndex !== null,
     'Result rule index should be set',
   );
   t.assert(
-    outputSarifObj?.runs[0].results[0]?.locations[0]?.physicalLocation
+    outputSarifObj?.runs[0].results?.[0]?.locations?.[0]?.physicalLocation
       ?.artifactLocation?.index !== null,
     'Result artifact index should be set',
   );
@@ -127,7 +128,7 @@ test('Create SarifResultBuilder with error', (t) => {
     createInitSarifWrongResultBuilder();
   } catch (e) {
     error = true;
-    console.log('Error: ' + e.message);
+    console.log('Error: ' + (e as Error).message);
   }
   t.assert(error === true, 'Error should have been triggered');
 });
@@ -362,7 +363,7 @@ test('SarifResultBuilder initSimple sets explicit region fields', (t) => {
   });
 
   const region =
-    resultBuilder.result.locations[0].physicalLocation.region || {};
+    resultBuilder.result.locations![0].physicalLocation!.region || {};
   t.is(region.startLine, 3);
   t.is(region.startColumn, 4);
   t.is(region.endLine, 5);
