@@ -18,11 +18,9 @@ DISABLE_ERRORS_LINTERS:
 SPELL_FILTER_REGEX_EXCLUDE: (github-dependents-info|\.claude/)
 DISABLE_LINTERS:
   - TYPESCRIPT_STANDARD
+  - JAVASCRIPT_STANDARD
 PRE_COMMANDS:
   - command: yarn install --frozen-lockfile --production=false
-    cwd: workspace
-    run_before_linters: true
-  - command: 'echo "DIAG NODE_ENV=$NODE_ENV size=$(du -sh node_modules 2>&1)"'
     cwd: workspace
     run_before_linters: true
 JSON_JSONLINT_FILTER_REGEX_EXCLUDE: (\.vscode|tsconfig\.json)

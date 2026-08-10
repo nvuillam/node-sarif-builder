@@ -1,15 +1,17 @@
-const { FlatCompat } = require('@eslint/eslintrc')
-const js = require('@eslint/js')
-const eslintCommentsPlugin = require('@eslint-community/eslint-plugin-eslint-comments')
-const { importX } = require('eslint-plugin-import-x')
-const { createTypeScriptImportResolver } = require('eslint-import-resolver-typescript')
+const { FlatCompat } = require('@eslint/eslintrc');
+const js = require('@eslint/js');
+const eslintCommentsPlugin = require('@eslint-community/eslint-plugin-eslint-comments');
+const { importX } = require('eslint-plugin-import-x');
+const {
+  createTypeScriptImportResolver,
+} = require('eslint-import-resolver-typescript');
 
 const compat = new FlatCompat({
   baseDirectory: __dirname,
-  recommendedConfig: js.configs.recommended
-})
+  recommendedConfig: js.configs.recommended,
+});
 
-const tsFiles = ['**/*.ts']
+const tsFiles = ['**/*.ts'];
 
 module.exports = [
   { ignores: ['node_modules/**', 'dist/**', 'coverage/**'] },
@@ -17,16 +19,20 @@ module.exports = [
     .config({
       parser: '@typescript-eslint/parser',
       parserOptions: {
-        project: './tsconfig.json'
+        project: './tsconfig.json',
       },
       env: {
-        es6: true
+        es6: true,
       },
-      extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'prettier'],
+      extends: [
+        'eslint:recommended',
+        'plugin:@typescript-eslint/recommended',
+        'prettier',
+      ],
       globals: {
         BigInt: true,
         console: true,
-        WebAssembly: true
+        WebAssembly: true,
       },
       rules: {
         '@typescript-eslint/explicit-module-boundary-types': 'off',
@@ -35,10 +41,10 @@ module.exports = [
           'error',
           {
             ignoreDeclarationSort: true,
-            ignoreCase: true
-          }
-        ]
-      }
+            ignoreCase: true,
+          },
+        ],
+      },
     })
     .map((config) => ({ ...config, files: tsFiles })),
   { ...importX.flatConfigs.recommended, files: tsFiles },
@@ -48,9 +54,9 @@ module.exports = [
     settings: {
       'import-x/resolver-next': [
         createTypeScriptImportResolver({
-          alwaysTryTypes: true
-        })
-      ]
+          alwaysTryTypes: true,
+        }),
+      ],
     },
     rules: {
       'import-x/order': [
@@ -58,25 +64,25 @@ module.exports = [
         {
           'newlines-between': 'always',
           alphabetize: {
-            order: 'asc'
-          }
-        }
-      ]
-    }
+            order: 'asc',
+          },
+        },
+      ],
+    },
   },
   {
     files: tsFiles,
     plugins: {
-      '@eslint-community/eslint-comments': eslintCommentsPlugin
+      '@eslint-community/eslint-comments': eslintCommentsPlugin,
     },
     rules: {
       '@eslint-community/eslint-comments/disable-enable-pair': [
         'error',
         {
-          allowWholeFile: true
-        }
+          allowWholeFile: true,
+        },
       ],
-      '@eslint-community/eslint-comments/no-unused-disable': 'error'
-    }
-  }
-]
+      '@eslint-community/eslint-comments/no-unused-disable': 'error',
+    },
+  },
+];
