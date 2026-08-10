@@ -22,6 +22,9 @@ PRE_COMMANDS:
   - command: yarn install --frozen-lockfile
     cwd: workspace
     run_before_linters: true
+  - command: 'echo "DIAG size: $(du -sh node_modules 2>&1)"; echo "DIAG count: $(find node_modules -maxdepth 1 -type d | wc -l) top-level dirs"; ls node_modules/@eslint-community/ 2>&1 || echo "DIAG MISSING @eslint-community"; node -e "console.log(require.resolve(\"@eslint-community/eslint-plugin-eslint-comments\"))" 2>&1; echo "DIAG registry: $(yarn config get registry 2>&1)"; echo "DIAG npmrc:"; cat .npmrc 2>&1 || echo none; cat ~/.npmrc 2>&1 || echo none; cat ~/.yarnrc 2>&1 || echo none; env | grep -i "yarn\|npm\|proxy\|registry" 2>&1'
+    cwd: workspace
+    run_before_linters: true
 JSON_JSONLINT_FILTER_REGEX_EXCLUDE: (\.vscode|tsconfig\.json)
 MARKDOWN_MARKDOWNLINT_FILTER_REGEX_EXCLUDE: (\\.github|\.claude/)
 COPYPASTE_JSCPD_FILTER_REGEX_EXCLUDE: (\.claude/|docs/github-dependents-info)
