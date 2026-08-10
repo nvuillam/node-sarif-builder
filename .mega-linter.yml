@@ -21,6 +21,8 @@ DISABLE_LINTERS:
 PRE_COMMANDS:
   - command: yarn install --frozen-lockfile
     cwd: workspace
+  - command: 'echo "DIAG node version: $(node --version)"; echo "DIAG yarn version: $(yarn --version)"; echo "DIAG node_modules size: $(du -sh node_modules 2>&1)"; ls -la node_modules/@eslint-community/ 2>&1 || echo "DIAG MISSING @eslint-community dir"; ls node_modules/@eslint-community/eslint-plugin-eslint-comments/ 2>&1 || echo "DIAG MISSING eslint-plugin-eslint-comments dir"'
+    cwd: workspace
 JSON_JSONLINT_FILTER_REGEX_EXCLUDE: (\.vscode|tsconfig\.json)
 MARKDOWN_MARKDOWNLINT_FILTER_REGEX_EXCLUDE: (\\.github|\.claude/)
 COPYPASTE_JSCPD_FILTER_REGEX_EXCLUDE: (\.claude/|docs/github-dependents-info)
