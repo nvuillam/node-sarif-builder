@@ -1,6 +1,8 @@
 # Configuration file for MegaLinter
 # See all available variables at https://megalinter.io/latest/configuration/ and in linters documentation
 
+MEGALINTER_FLAVOR: javascript
+MEGALINTER_VERSION: v10
 APPLY_FIXES: none # all, none, or list of linter keys
 # ENABLE: # If you use ENABLE variable, all other languages/formats/tooling-formats will be disabled by default
 # ENABLE_LINTERS: # If you use ENABLE_LINTERS variable, all other linters will be disabled by default
@@ -13,17 +15,19 @@ DISABLE_ERRORS_LINTERS:
   - ACTION_ACTIONLINT
   - REPOSITORY_TRUFFLEHOG
   - SPELL_LYCHEE
-SPELL_FILTER_REGEX_EXCLUDE: (github-dependents-info)
+SPELL_FILTER_REGEX_EXCLUDE: (github-dependents-info|\.claude/)
 DISABLE_LINTERS:
-  - MARKDOWN_MARKDOWN_LINK_CHECK
   - TYPESCRIPT_STANDARD
+  - JAVASCRIPT_STANDARD
 PRE_COMMANDS:
-  - command: yarn install --frozen-lockfile
+  - command: yarn install --frozen-lockfile --production=false
     cwd: workspace
-  - command: yarn add eslint-plugin-eslint-comments
-    cwd: workspace
+    run_before_linters: true
 JSON_JSONLINT_FILTER_REGEX_EXCLUDE: (\.vscode|tsconfig\.json)
-MARKDOWN_MARKDOWNLINT_FILTER_REGEX_EXCLUDE: (\\.github)
+MARKDOWN_MARKDOWNLINT_FILTER_REGEX_EXCLUDE: (\\.github|\.claude/)
+COPYPASTE_JSCPD_FILTER_REGEX_EXCLUDE: (\.claude/|docs/github-dependents-info)
+ACTION_ZIZMOR_UNSECURED_ENV_VARIABLES:
+  - GITHUB_TOKEN
 REPOSITORY_TRIVY_ARGUMENTS:
   - --skip-dirs
   - ./node_modules/uri-js

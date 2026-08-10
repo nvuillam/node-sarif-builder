@@ -101,6 +101,7 @@
     "apacheconf",
     "applescript",
     "arpa",
+    "artipacked",
     "asax",
     "ashx",
     "asmx",
@@ -295,6 +296,7 @@
     "xsjslib",
     "zcml",
     "zimpl",
+    "zizmor",
     "zmpl"
   ]
 }
