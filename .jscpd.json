@@ -10,6 +10,8 @@
     "**/.github/**",
     "**/.idea/**",
     "**/report/**",
-    "**/*.svg"
+    "**/*.svg",
+    "**/.claude/**",
+    "docs/github-dependents-info*.md"
   ]
 }
