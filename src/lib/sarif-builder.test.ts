@@ -39,19 +39,13 @@ test('Create SarifRunBuilder and use initSimple', () => {
 
 test('Create SarifResultBuilder', () => {
   const sarifResultBuilder = new SarifResultBuilder();
-  assert.ok(
-    sarifResultBuilder != null,
-    'SarifResultBuilder has been created',
-  );
+  assert.ok(sarifResultBuilder != null, 'SarifResultBuilder has been created');
 });
 
 test('Create SarifResultBuilder and set message', () => {
   const sarifResultBuilder = new SarifResultBuilder();
   sarifResultBuilder.setMessageText('MegaLinter message');
-  assert.ok(
-    sarifResultBuilder != null,
-    'SarifResultBuilder has been created',
-  );
+  assert.ok(sarifResultBuilder != null, 'SarifResultBuilder has been created');
   assert.strictEqual(
     sarifResultBuilder.result.message.text,
     'MegaLinter message',
@@ -60,10 +54,7 @@ test('Create SarifResultBuilder and set message', () => {
 
 test('Create SarifResultBuilder and use initSimple', () => {
   const sarifResultBuilder = createInitSarifResultBuilder();
-  assert.ok(
-    sarifResultBuilder != null,
-    'SarifResultBuilder has been created',
-  );
+  assert.ok(sarifResultBuilder != null, 'SarifResultBuilder has been created');
   assert.strictEqual(
     sarifResultBuilder.result.message.text,
     'An assignment operator (=) was used in a conditional test. This is usually a typo, and the comparison operator (==) was intended.',
@@ -174,8 +165,14 @@ test('Generate SARIF with multiple runs', () => {
 
   const outputSarifObj: Log = JSON.parse(readFileSync(outputFile, 'utf8'));
   assert.strictEqual(outputSarifObj?.runs?.length, 2);
-  assert.strictEqual(outputSarifObj?.runs?.[0]?.tool?.driver?.name, 'MegaLinter');
-  assert.strictEqual(outputSarifObj?.runs?.[1]?.tool?.driver?.name, 'AnotherTool');
+  assert.strictEqual(
+    outputSarifObj?.runs?.[0]?.tool?.driver?.name,
+    'MegaLinter',
+  );
+  assert.strictEqual(
+    outputSarifObj?.runs?.[1]?.tool?.driver?.name,
+    'AnotherTool',
+  );
   assert.strictEqual(outputSarifObj?.runs?.[0]?.results?.length, 1);
   assert.strictEqual(outputSarifObj?.runs?.[1]?.results?.length, 1);
 });
