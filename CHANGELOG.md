@@ -2,6 +2,13 @@
 
 ## Beta
 
+- Upgrade MegaLinter to v10
+- Migrate ESLint config to flat config (`eslint.config.js`) for ESLint v10
+- Migrate test suite from ava/nyc to Node's built-in test runner and coverage
+- Upgrade NodeJs minimum version to Node 22
+- Fix dependency security vulnerabilities and shrink dependency footprint (remove ava, nyc, codecov, ts-node, fs-extra)
+- CI: Harden GitHub Actions workflows (pin third-party actions to commit SHA, fix zizmor security findings)
+
 ## [4.1.0] 2026-04-19
 
 - Upgrade to Typescript v6
