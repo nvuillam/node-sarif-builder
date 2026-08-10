@@ -101,6 +101,7 @@
     "apacheconf",
     "applescript",
     "arpa",
+    "artipacked",
     "asax",
     "ashx",
     "asmx",
@@ -220,7 +221,6 @@
     "phpt",
     "plsql",
     "pluginspec",
-    "pluginutils",
     "pmod",
     "podsl",
     "podspec",
@@ -269,7 +269,6 @@
     "terrascan",
     "terrasform",
     "tflint",
-    "tootallnate",
     "topojson",
     "traceback",
     "trivy",
@@ -297,6 +296,7 @@
     "xsjslib",
     "zcml",
     "zimpl",
+    "zizmor",
     "zmpl"
   ]
 }
