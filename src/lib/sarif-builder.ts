@@ -1,4 +1,6 @@
-import * as fs from 'fs-extra';
+import { writeFileSync } from 'fs';
+import { writeFile } from 'fs/promises';
+
 import { Log, Run } from 'sarif';
 
 import { LogOptions } from '../types/node-sarif-builder';
@@ -27,12 +29,12 @@ export class SarifBuilder {
 
   generateSarifFileSync(file: string) {
     const sarifJsonString = this.buildSarifJsonString();
-    fs.writeFileSync(file, sarifJsonString, 'utf8');
+    writeFileSync(file, sarifJsonString, 'utf8');
   }
 
   async generateSarifFile(file: string) {
     const sarifJsonString = this.buildSarifJsonString();
-    await fs.writeFile(file, sarifJsonString, 'utf8');
+    await writeFile(file, sarifJsonString, 'utf8');
   }
 
   buildSarifOutput() {

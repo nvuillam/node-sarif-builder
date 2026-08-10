@@ -1,8 +1,8 @@
+import { existsSync, readFileSync } from 'fs';
 import * as os from 'os';
 import * as path from 'path';
 
 import test from 'ava';
-import * as fs from 'fs-extra';
 import { Log } from 'sarif';
 
 import { SarifBuilder } from './sarif-builder';
@@ -93,8 +93,8 @@ test('Create SarifResultBuilder and generate file', (t) => {
     'testSarifBuilder-' + Math.random() + '.sarif',
   );
   sarifBuilder.generateSarifFileSync(outputFile);
-  t.assert(fs.existsSync(outputFile), 'Output SARIF file not found');
-  const outputSarifObj: Log = JSON.parse(fs.readFileSync(outputFile, 'utf8'));
+  t.assert(existsSync(outputFile), 'Output SARIF file not found');
+  const outputSarifObj: Log = JSON.parse(readFileSync(outputFile, 'utf8'));
   t.assert(
     outputSarifObj?.runs?.length > 0,
     'No runs found in generated SARIF log',
@@ -156,7 +156,7 @@ test('Generate SARIF with multiple runs', (t) => {
   );
   sarifBuilder.generateSarifFileSync(outputFile);
 
-  const outputSarifObj: Log = JSON.parse(fs.readFileSync(outputFile, 'utf8'));
+  const outputSarifObj: Log = JSON.parse(readFileSync(outputFile, 'utf8'));
   t.is(outputSarifObj?.runs?.length, 2);
   t.is(outputSarifObj?.runs?.[0]?.tool?.driver?.name, 'MegaLinter');
   t.is(outputSarifObj?.runs?.[1]?.tool?.driver?.name, 'AnotherTool');
@@ -199,7 +199,7 @@ test('Generate SARIF with richer tool and result details', (t) => {
   );
   sarifBuilder.generateSarifFileSync(outputFile);
 
-  const outputSarifObj: Log = JSON.parse(fs.readFileSync(outputFile, 'utf8'));
+  const outputSarifObj: Log = JSON.parse(readFileSync(outputFile, 'utf8'));
   const run = outputSarifObj?.runs?.[0];
 
   t.is(run?.tool?.driver?.name, 'DetailTool');
@@ -266,7 +266,7 @@ test('Generate SARIF file async', async (t) => {
     'testSarifBuilder-async-' + Math.random() + '.sarif',
   );
   await sarifBuilder.generateSarifFile(outputFile);
-  t.true(fs.existsSync(outputFile));
+  t.true(existsSync(outputFile));
 });
 
 test('Complete run fields adds artifacts and sets indexes', (t) => {

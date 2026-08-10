@@ -15,17 +15,17 @@ DISABLE_ERRORS_LINTERS:
   - ACTION_ACTIONLINT
   - REPOSITORY_TRUFFLEHOG
   - SPELL_LYCHEE
-SPELL_FILTER_REGEX_EXCLUDE: (github-dependents-info)
+SPELL_FILTER_REGEX_EXCLUDE: (github-dependents-info|\.claude/)
 DISABLE_LINTERS:
-  - MARKDOWN_MARKDOWN_LINK_CHECK
   - TYPESCRIPT_STANDARD
 PRE_COMMANDS:
   - command: yarn install --frozen-lockfile
     cwd: workspace
-  - command: yarn add eslint-plugin-eslint-comments
-    cwd: workspace
 JSON_JSONLINT_FILTER_REGEX_EXCLUDE: (\.vscode|tsconfig\.json)
-MARKDOWN_MARKDOWNLINT_FILTER_REGEX_EXCLUDE: (\\.github)
+MARKDOWN_MARKDOWNLINT_FILTER_REGEX_EXCLUDE: (\\.github|\.claude/)
+COPYPASTE_JSCPD_FILTER_REGEX_EXCLUDE: (\.claude/)
+ACTION_ZIZMOR_UNSECURED_ENV_VARIABLES:
+  - GITHUB_TOKEN
 REPOSITORY_TRIVY_ARGUMENTS:
   - --skip-dirs
   - ./node_modules/uri-js
