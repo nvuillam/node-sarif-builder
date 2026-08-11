@@ -1,13 +1,21 @@
 # Changelog
 
-## Beta
 
-- Upgrade MegaLinter to v10
+## [Unreleased] Beta
+
+## [5.0.0] 2026-08-11
+
+- **Minimal npm dependencies for better security**: shrink the dependency footprint and patch 32 known vulnerabilities (1 critical) in transitive dev dependencies
+  - Remove ava, @ava/typescript, nyc, @istanbuljs/nyc-config-typescript, codecov, ts-node, fs-extra and their whole transitive dependency tree
+  - Migrate test suite from ava/nyc to Node's built-in test runner and coverage
+- BREAKING CHANGE: Upgrade NodeJs minimum version to Node 22
 - Migrate ESLint config to flat config (`eslint.config.js`) for ESLint v10
-- Migrate test suite from ava/nyc to Node's built-in test runner and coverage
-- Upgrade NodeJs minimum version to Node 22
-- Fix dependency security vulnerabilities and shrink dependency footprint (remove ava, nyc, codecov, ts-node, fs-extra)
+- Upgrade dependency @eslint/js to v10
+- Upgrade MegaLinter to v10
 - CI: Harden GitHub Actions workflows (pin third-party actions to commit SHA, fix zizmor security findings)
+- Upgrade actions/checkout to v7 and actions/setup-node to v7
+- Fix CI: drop registry-url from setup-node now that it no longer stubs NODE_AUTH_TOKEN
+- Upgrade NPM dependencies
 
 ## [4.1.0] 2026-04-19
 
