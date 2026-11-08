@@ -4,6 +4,8 @@
 
 | Repository | Stars  |
 | :--------  | -----: |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/62354014?s=40&v=4" width="20" height="20" alt="">  &nbsp; [pablo-schmeiser](https://github.com/pablo-schmeiser) / [ppl-lint-vscode](https://github.com/pablo-schmeiser/ppl-lint-vscode) | 2 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/97889189?s=40&v=4" width="20" height="20" alt="">  &nbsp; [henzyd](https://github.com/henzyd) / [chromuta](https://github.com/henzyd/chromuta) | 2 |
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/20529132?s=40&v=4" width="20" height="20" alt="">  &nbsp; [owenpkent](https://github.com/owenpkent) / [markcopy](https://github.com/owenpkent/markcopy) | 2 |
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/3182351?s=40&v=4" width="20" height="20" alt="">  &nbsp; [dr-gareth-roberts](https://github.com/dr-gareth-roberts) / [insideLLMs](https://github.com/dr-gareth-roberts/insideLLMs) | 2 |
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/249027?s=40&v=4" width="20" height="20" alt="">  &nbsp; [filipmares](https://github.com/filipmares) / [vscode-specialsboard-theme](https://github.com/filipmares/vscode-specialsboard-theme) | 2 |
@@ -98,9 +100,10 @@
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/54363948?s=40&v=4" width="20" height="20" alt="">  &nbsp; [JuanTorchia](https://github.com/JuanTorchia) / [gmm-haproxy-vscode](https://github.com/JuanTorchia/gmm-haproxy-vscode) | 2 |
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/30439030?s=40&v=4" width="20" height="20" alt="">  &nbsp; [DesyncTheThird](https://github.com/DesyncTheThird) / [heliotrope](https://github.com/DesyncTheThird/heliotrope) | 2 |
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/43494594?s=40&v=4" width="20" height="20" alt="">  &nbsp; [liandir](https://github.com/liandir) / [locality-harness](https://github.com/liandir/locality-harness) | 2 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/22199103?s=40&v=4" width="20" height="20" alt="">  &nbsp; [zokugun](https://github.com/zokugun) / [vscode-cron](https://github.com/zokugun/vscode-cron) | 2 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/205041175?s=40&v=4" width="20" height="20" alt="">  &nbsp; [SKYIOUS](https://github.com/SKYIOUS) / [COD](https://github.com/SKYIOUS/COD) | 2 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/7837053?s=40&v=4" width="20" height="20" alt="">  &nbsp; [ScoutmanPt](https://github.com/ScoutmanPt) / [azrunbooks-workbench](https://github.com/ScoutmanPt/azrunbooks-workbench) | 2 |
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/13128229?s=40&v=4" width="20" height="20" alt="">  &nbsp; [gncoelho](https://github.com/gncoelho) / [apex-query-validator](https://github.com/gncoelho/apex-query-validator) | 2 |
-|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/83689697?s=40&v=4" width="20" height="20" alt="">  &nbsp; [li1how](https://github.com/li1how) / [vscode-npu-monitor](https://github.com/li1how/vscode-npu-monitor) | 2 |
-|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/115497755?s=40&v=4" width="20" height="20" alt="">  &nbsp; [CardSorting](https://github.com/CardSorting) / [LUMI](https://github.com/CardSorting/LUMI) | 2 |
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/3511344?s=40&v=4" width="20" height="20" alt="">  &nbsp; [dalisoft](https://github.com/dalisoft) / [npm-packages](https://github.com/dalisoft/npm-packages) | 2 |
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/8136211?s=40&v=4" width="20" height="20" alt="">  &nbsp; [ehmicky](https://github.com/ehmicky) / [test-api](https://github.com/ehmicky/test-api) | 2 |
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/8136211?s=40&v=4" width="20" height="20" alt="">  &nbsp; [ehmicky](https://github.com/ehmicky) / [time-resolution](https://github.com/ehmicky/time-resolution) | 2 |
@@ -501,9 +504,6 @@
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/6334979?s=40&v=4" width="20" height="20" alt="">  &nbsp; [rxdt](https://github.com/rxdt) / [rxdt.github.io](https://github.com/rxdt/rxdt.github.io) | 1 |
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/181178461?s=40&v=4" width="20" height="20" alt="">  &nbsp; [Bright140](https://github.com/Bright140) / [vscode](https://github.com/Bright140/vscode) | 1 |
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/464563?s=40&v=4" width="20" height="20" alt="">  &nbsp; [forcedotcom](https://github.com/forcedotcom) / [AgentLens](https://github.com/forcedotcom/AgentLens) | 1 |
-|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/221952842?s=40&v=4" width="20" height="20" alt="">  &nbsp; [Jabidahs-Creations-Systems](https://github.com/Jabidahs-Creations-Systems) / [vscode-csharp](https://github.com/Jabidahs-Creations-Systems/vscode-csharp) | 1 |
-|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/169719822?s=40&v=4" width="20" height="20" alt="">  &nbsp; [gamjak](https://github.com/gamjak) / [codex_cost_extension](https://github.com/gamjak/codex_cost_extension) | 1 |
-|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/59828027?s=40&v=4" width="20" height="20" alt="">  &nbsp; [CLIuno](https://github.com/CLIuno) / [CLIuno-Vscode-Extension](https://github.com/CLIuno/CLIuno-Vscode-Extension) | 1 |
 
 <div align="center"><a href="github-dependents-info-2.md">⬅️ Previous</a> | <span>Page 3 of 8</span> | <a href="github-dependents-info-4.md">Next ➡️</a></div>
 

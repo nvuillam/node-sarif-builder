@@ -4,6 +4,11 @@
 
 | Repository | Stars  |
 | :--------  | -----: |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/327391377?s=40&v=4" width="20" height="20" alt="">  &nbsp; [thongchaimissangkana036-ux](https://github.com/thongchaimissangkana036-ux) / [vscode](https://github.com/thongchaimissangkana036-ux/vscode) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/280985471?s=40&v=4" width="20" height="20" alt="">  &nbsp; [tdb-project](https://github.com/tdb-project) / [tdb-vscode](https://github.com/tdb-project/tdb-vscode) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/250499275?s=40&v=4" width="20" height="20" alt="">  &nbsp; [wbran-ahd](https://github.com/wbran-ahd) / [omniroute](https://github.com/wbran-ahd/omniroute) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/87242662?s=40&v=4" width="20" height="20" alt="">  &nbsp; [Anakin-Inc](https://github.com/Anakin-Inc) / [vscode-anakin](https://github.com/Anakin-Inc/vscode-anakin) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/106790619?s=40&v=4" width="20" height="20" alt="">  &nbsp; [kyto64](https://github.com/kyto64) / [vscode-line-ref-copy](https://github.com/kyto64/vscode-line-ref-copy) | 0 |
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/220084937?s=40&v=4" width="20" height="20" alt="">  &nbsp; [AttitudeFactory](https://github.com/AttitudeFactory) / [code-context](https://github.com/AttitudeFactory/code-context) | 0 |
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/6952134?s=40&v=4" width="20" height="20" alt="">  &nbsp; [juninmd](https://github.com/juninmd) / [vscode](https://github.com/juninmd/vscode) | 0 |
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/795289?s=40&v=4" width="20" height="20" alt="">  &nbsp; [raelga](https://github.com/raelga) / [ARO-HCP](https://github.com/raelga/ARO-HCP) | 0 |
@@ -499,11 +504,6 @@
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/143603952?s=40&v=4" width="20" height="20" alt="">  &nbsp; [craf-te](https://github.com/craf-te) / [vscode-syphon-viewer](https://github.com/craf-te/vscode-syphon-viewer) | 0 |
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/282486590?s=40&v=4" width="20" height="20" alt="">  &nbsp; [viewport-corp](https://github.com/viewport-corp) / [fork-openclaw](https://github.com/viewport-corp/fork-openclaw) | 0 |
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/89968009?s=40&v=4" width="20" height="20" alt="">  &nbsp; [m-shiono](https://github.com/m-shiono) / [md-wysiwyg-editor](https://github.com/m-shiono/md-wysiwyg-editor) | 0 |
-|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/13091533?s=40&v=4" width="20" height="20" alt="">  &nbsp; [teamleaderleo](https://github.com/teamleaderleo) / [code-depth-gradations](https://github.com/teamleaderleo/code-depth-gradations) | 0 |
-|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/42442432?s=40&v=4" width="20" height="20" alt="">  &nbsp; [torischuyler](https://github.com/torischuyler) / [torischuyler.github.io](https://github.com/torischuyler/torischuyler.github.io) | 0 |
-|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/106860930?s=40&v=4" width="20" height="20" alt="">  &nbsp; [Mdsoare](https://github.com/Mdsoare) / [secure-currency-converter](https://github.com/Mdsoare/secure-currency-converter) | 0 |
-|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/106860930?s=40&v=4" width="20" height="20" alt="">  &nbsp; [Mdsoare](https://github.com/Mdsoare) / [dev-code-beautifier-styler](https://github.com/Mdsoare/dev-code-beautifier-styler) | 0 |
-|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/106860930?s=40&v=4" width="20" height="20" alt="">  &nbsp; [Mdsoare](https://github.com/Mdsoare) / [analisador-texto-ia](https://github.com/Mdsoare/analisador-texto-ia) | 0 |
 
 <div align="center"><a href="github-dependents-info-4.md">⬅️ Previous</a> | <span>Page 5 of 8</span> | <a href="github-dependents-info-6.md">Next ➡️</a></div>
 

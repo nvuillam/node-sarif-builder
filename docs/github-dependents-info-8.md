@@ -4,6 +4,8 @@
 
 | Repository | Stars  |
 | :--------  | -----: |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/31616278?s=40&v=4" width="20" height="20" alt="">  &nbsp; [dyolfan](https://github.com/dyolfan) / [trading-journal-app_test](https://github.com/dyolfan/trading-journal-app_test) | 0 |
+|<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/34852428?s=40&v=4" width="20" height="20" alt="">  &nbsp; [iamnabeel92](https://github.com/iamnabeel92) / [Salesforce-POS](https://github.com/iamnabeel92/Salesforce-POS) | 0 |
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/148347005?s=40&v=4" width="20" height="20" alt="">  &nbsp; [Niko-Danilov](https://github.com/Niko-Danilov) / [Kemb](https://github.com/Niko-Danilov/Kemb) | 0 |
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/63062491?s=40&v=4" width="20" height="20" alt="">  &nbsp; [dedaMazai](https://github.com/dedaMazai) / [browseExtension](https://github.com/dedaMazai/browseExtension) | 0 |
 |<img class="avatar mr-2" src="https://avatars.githubusercontent.com/u/515798?s=40&v=4" width="20" height="20" alt="">  &nbsp; [jasonsjones](https://github.com/jasonsjones) / [lwr-project](https://github.com/jasonsjones/lwr-project) | 0 |
