@@ -1012,9 +1012,9 @@ balanced-match@^4.0.2:
   integrity sha512-BLrgEcRTwX2o6gGxGOCNyMvGSp35YofuYzw9h1IMTRmKqttAZZVU67bdb9Pr2vUHA8+j3i2tJfjO6C6+4myGTA==
 
 brace-expansion@^5.0.12:
-  version "5.0.12"
-  resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-5.0.12.tgz#995fbb4750a77c4d16a7dc942ff2ca6ef8e675ec"
-  integrity sha512-YovQ3rzhaLMIrDjNDMkNS01tea93qhEhG5xy8f6+R0l+dw3Ki+5sCoIoI942iuLZTHWogWktgwVDhU09iNEimQ==
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-5.1.0.tgz#719c6a5c65fc0dee849b69ff25b4c023458537e2"
+  integrity sha512-aa11Dv491GKnYqxaul3aRJ0szew7yMJMfZPnqD44NjGrZXoj62l41OEDDpdpC4eE2P88vBFfLuSyRhpG91NUvg==
   dependencies:
     balanced-match "^4.0.2"
 
@@ -1587,9 +1587,9 @@ locate-path@^6.0.0:
     p-locate "^5.0.0"
 
 minimatch@^10.2.2, minimatch@^10.2.4, minimatch@^10.2.6, minimatch@^11.0.1, minimatch@^3.1.5, "minimatch@^9.0.3 || ^10.1.2 || ^11.0.1":
-  version "11.0.6"
-  resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-11.0.6.tgz#99b1cdf4592b77aac7b12a83d2d76dfa78420016"
-  integrity sha512-6NZbDPQIRnsJFjJ9wbd5659OKaTHCqpPHdldE3WwArjxr5wLxHIwnx4eTGcPebpVBZZQbITvQQIx8K0VGXoT3Q==
+  version "11.0.9"
+  resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-11.0.9.tgz#00d0088671fa0d872ba1e2578f5abf3be0fe878e"
+  integrity sha512-KCFkfyjqerNlSstjlhIGNXIKZGA/6O4V4RlhZ+Dsr621SPPw0mzlypE9D9ZOoPiVefHID+j7/XuMMlqfD/F60Q==
   dependencies:
     "@isaacs/nonrecursive-glob-match" "^1.1.0"
     brace-expansion "^5.0.12"
